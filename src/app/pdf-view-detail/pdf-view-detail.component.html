@@ -1,0 +1,42 @@
+<div *ngIf="data" class="container">
+  <div class="form-area">
+    <label>Account Number:</label>
+    <br>
+    <input type="text" name="accountNumber" [value]="data.read.Identity.AccountNumber"
+          [ngClass]="{'low-confidence': data.read.Identity.AccountNumberConfidence < 0.9}"
+           (click)="highlightField(data.read.Identity.AccountNumberCoordinates, data.read.Identity.PageNumber)">
+    <br>
+    <label>Address:</label>
+    <br>
+    <input type="text" name="Address" [value]="data.read.Identity.Address"
+          [ngClass]="{'low-confidence': data.read.Identity.AddressConfidence < 0.9}"
+           (click)="highlightField(data.read.Identity.AddressCoordinates, data.read.Identity.PageNumber)">
+    <br>
+    <label>BankOffice:</label>
+    <br>
+    <input type="text" name="BankOffice" [value]="data.read.Identity.BankOffice"
+            [ngClass]="{'low-confidence': data.read.Identity.BankOfficeConfidence < 0.9}"
+           (click)="highlightField(data.read.Identity.BankOfficeCoordinates, data.read.Identity.PageNumber)">
+    <br>
+    <label>Currency:</label>
+    <br>
+    <input type="text" name="Currency" [value]="data.read.Identity.Currency"
+            [ngClass]="{'low-confidence': data.read.Identity.CurrencyConfidence < 0.9}"
+           (click)="highlightField(data.read.Identity.CurrencyCoordinates, data.read.Identity.PageNumber)">
+    <br>
+    <label>Name:</label>
+    <br>
+    <input type="text" name="Name" [value]="data.read.Identity.Name"
+          [ngClass]="{'low-confidence': data.read.Identity.NameConfidence < 0.9}"
+           (click)="highlightField(data.read.Identity.NameCoordinates, data.read.Identity.PageNumber)">
+    <br>
+    <label>Product:</label>
+    <br>
+    <input type="text" name="Product" [value]="data.read.Identity.Product"
+          [ngClass]="{'low-confidence': data.read.Identity.ProductConfidence < 0.9}"
+           (click)="highlightField(data.read.Identity.ProductCoordinates, data.read.Identity.PageNumber)">
+    <br>
+    <!-- Additional form elements -->
+  </div>
+  <div #viewer class="viewer"></div>
+</div>

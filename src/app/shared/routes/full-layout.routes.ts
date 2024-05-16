@@ -87,4 +87,8 @@ export const Full_ROUTES: Routes = [
     path: 'office',
     loadChildren: './office/office.module#OfficeModule'
   },
+  {
+    path: 'pdf-view-detail',
+    loadChildren: './pdf-view-detail/pdf-view-detail.module#PdfViewDetailModule'
+  }
 ];
