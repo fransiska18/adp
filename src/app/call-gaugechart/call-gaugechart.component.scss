@@ -1,0 +1,18 @@
+@import "../../assets/sass/scss/gradient-variables";
+
+:host /deep/ .ct-slice-donut, .ct-slice-pie {
+    stroke: rgb(248, 174, 174);
+
+}
+
+// :host /deep/ .ct-slice-target {
+//     stroke: yellow;
+// }
+
+// #donut-chart-target{
+//     color: red;
+// }
+
+// #donut-chart-monthly{
+//     //stroke:red;
+// }

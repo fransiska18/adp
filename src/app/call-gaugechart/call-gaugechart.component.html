@@ -1,0 +1,112 @@
+<div class="card">
+    <h6 style="text-align: center ; margin-top: 25px ; color: black">4Gauge Chart</h6>
+
+    <div class="row" style="margin-bottom: 0px; padding: 0px">
+        <div class="col-sm-6 col-sm-auto">
+            <div id="isi" style="text-align: center ; color: black ; font-size: 8px">Target = </div>>
+            <div id="donut-chart-target" style="height: 75px;">
+                <x-chartist [data]="donutChart1.data" [type]="donutChart1.type"
+                    [options]="donutChart1.options" [responsiveOptions]="donutChart1.responsiveOptions"
+                    [events]="donutChart1.events">
+                </x-chartist>
+            </div>
+        </div>
+        <div class="col-sm-6 col-sm-auto">
+            <div id="isi" style="text-align: center ; color: black ; font-size: 8px">Montly Avg. = </div>>
+            <div id="donut-chart-monthly" style="height: 75px;">
+                <x-chartist [data]="donutChart2.data" [type]="donutChart2.type"
+                    [options]="donutChart2.options" [responsiveOptions]="donutChart2.responsiveOptions"
+                    [events]="donutChart2.events" style="font-size:10px">
+                 </x-chartist>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="margin-bottom: 0px; padding: 0px">
+        <div class="col-sm-6 col-sm-auto">
+            <div id="isi" style="text-align: center ; color: black ; font-size: 8px">Branch Avg. = </div>>
+            <div id="donut-chart-branch" style="height: 75px;">
+                <x-chartist [data]="donutChart3.data" [type]="donutChart3.type"
+                            [options]="donutChart3.options" [responsiveOptions]="donutChart3.responsiveOptions"
+                            [events]="donutChart3.events">
+                </x-chartist>
+            </div>
+        </div>
+        <div class="col-sm-6 col-sm-auto">
+            <div id="isi" style="text-align: center ; color: black ; font-size: 8px">National Avg. = </div>>
+            <div id="donut-chart-national" style="height: 75px;">
+                <x-chartist [data]="donutChart4.data" [type]="donutChart4.type"
+                            [options]="donutChart4.options" [responsiveOptions]="donutChart4.responsiveOptions"
+                            [events]="donutChart4.events" style="font-size:10px">
+                </x-chartist>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <div class="card">
+    <h4 class="card-title" style="text-align: center ; margin-top: 25px">4Gauge Chart</h4>
+    <div class="row" style="margin-bottom: 0px; padding: 0px">
+        <div class="col-sm-6">
+            <div class="card-header">
+                <h6 style="text-align: center">Target = </h6>
+            </div>
+            <div class="card-body">
+                <div class="card-block">
+                    <div id="donut-chart-target" class="height-10">
+                        <x-chartist [data]="donutChart1.data" [type]="donutChart1.type"
+                            [options]="donutChart1.options" [responsiveOptions]="donutChart1.responsiveOptions"
+                            [events]="donutChart1.events">
+                        </x-chartist>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card-header">
+                <h6 style="text-align: center">Montly Avg. = </h6>
+            </div>
+            <div class="card-body">
+                <div class="card-block">
+                    <div id="donut-chart-monthly" class="height-10">
+                        <x-chartist [data]="donutChart2.data" [type]="donutChart2.type"
+                            [options]="donutChart2.options" [responsiveOptions]="donutChart2.responsiveOptions"
+                            [events]="donutChart2.events" style="font-size:10px">
+                        </x-chartist>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="card-header">
+                <h6 style="text-align: center">Branch Avg. = </h6>
+            </div>
+            <div class="card-body">
+                <div class="card-block">
+                    <div id="donut-chart-branch" class="height-10">
+                        <x-chartist [data]="donutChart3.data" [type]="donutChart3.type"
+                            [options]="donutChart3.options" [responsiveOptions]="donutChart3.responsiveOptions"
+                            [events]="donutChart3.events">
+                        </x-chartist>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card-header">
+                <h6 style="text-align: center">National Avg. = </h6>
+            </div>
+            <div class="card-body">
+                <div class="card-block">
+                    <div id="donut-chart-national" class="height-10">
+                        <x-chartist [data]="donutChart4.data" [type]="donutChart4.type"
+                            [options]="donutChart4.options" [responsiveOptions]="donutChart4.responsiveOptions"
+                            [events]="donutChart4.events" style="font-size:10px">
+                        </x-chartist>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->

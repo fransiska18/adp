@@ -1,0 +1,110 @@
+<div class="row">
+    <div class="col-sm-12">
+        <div class="content-header">Coba Charts</div>
+        <p class="content-sub-header">Iseng bikin charts</p>
+        <br>
+        <table>
+          <tr>
+            <th>CMOName</th>
+            <th>CustName</th>
+            <th>LeadStat</th>
+          </tr>
+          <tr *ngFor="let x of lstcolumns">
+            <td>{{x.CmoName}}</td>
+            <td>{{x.CustName}}</td>
+            <td>{{x.LeadStat}}</td>
+          </tr>
+        </table>
+    </div>
+</div>
+
+<!--Global configuration of carousels Starts-->
+<!-- <div class="col-sm-12">
+    <div class="card">
+      <div class="card-header">
+        <h4 class="card-title">Global configuration of carousels</h4>
+      </div>
+      <div class="card-body">
+        <div class="card-block">
+          <ngb-carousel style="list-style: none ;">
+            <ng-template ngbSlide>
+              <img src="assets/img/photos/15.jpg" alt="first slide" style="margin:0 auto;">
+              <div class="carousel-caption">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <app-call-barchart></app-call-barchart>
+                  </div>
+                  <div class="col-sm-4">
+                    <app-call-barchart></app-call-barchart>
+                  </div>
+                  <div class="col-sm-4">
+                    <app-call-barchart></app-call-barchart>
+                  </div>
+                </div>6
+                <div class="row">
+                  <div class="col-sm-4">
+                    <app-call-gaugechart></app-call-gaugechart>
+                  </div>
+                  <div class="col-sm-4">
+                    <app-call-gaugechart></app-call-gaugechart>
+                  </div>
+                  <div class="col-sm-4">
+                    <app-call-gaugechart></app-call-gaugechart>
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+            <ng-template ngbSlide>
+                <img src="assets/img/photos/16.jpg" alt="second slide" style="margin:0 auto;">
+                <div class="carousel-caption">
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <app-call-barchart></app-call-barchart>
+                    </div>
+                    <div class="col-sm-4">
+                      <app-call-barchart></app-call-barchart>
+                    </div>
+                    
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <app-call-gaugechart></app-call-gaugechart>
+                    </div>
+                    <div class="col-sm-4">
+                      <app-call-gaugechart></app-call-gaugechart>
+                    </div>
+                    <div class="col-sm-4">
+                      <app-call-gaugechart></app-call-gaugechart>
+                    </div>
+                  </div>
+                </div>
+              </ng-template>
+              <ng-template ngbSlide>
+                  <img src="assets/img/photos/17.jpg" alt="third slide" style="margin:0 auto;">
+                  <div class="carousel-caption">
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <app-call-barchart></app-call-barchart>
+                      </div>
+                      <div class="col-sm-4">
+                        <app-call-barchart></app-call-barchart>
+                      </div>
+                      <div class="col-sm-4">
+                        <app-call-barchart></app-call-barchart>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <app-call-gaugechart></app-call-gaugechart>
+                      </div>
+                      <div class="col-sm-4">
+                        <app-call-gaugechart></app-call-gaugechart>
+                      </div>                    
+                    </div>
+                  </div>
+                </ng-template>
+          </ngb-carousel>
+        </div>
+      </div>
+    </div>
+  </div> -->

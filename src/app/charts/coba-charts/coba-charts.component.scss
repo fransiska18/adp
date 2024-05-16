@@ -1,0 +1,13 @@
+.carousel-caption{
+    right: 5% !important;
+    left: 5% !important;
+}
+
+/deep/ .carousel-control-prev,
+/deep/ .carousel-control-next{
+    width: 5% !important;
+}
+
+/deep/ .carousel-inner > .carousel-item > img{
+    max-width: inherit !important;
+}

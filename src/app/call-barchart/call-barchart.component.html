@@ -1,0 +1,18 @@
+<!--Horizontal Bar Chart Starts-->
+      <div class="card">
+          <div class="card-header">
+              <h6 style="color: black">Top 5 App Input Area Jawa Timur</h6>
+          </div>
+          <div class="card-body">
+              <!-- <div class="card-block"> -->
+                  <div id="horizontal-bar-chart" class="height-200" style="font-size: 10px">
+                      <ngx-charts-bar-horizontal-2d [scheme]="barChartColorScheme" [results]="barChartmulti" [gradient]="barChartGradient" [xAxis]="barChartShowXAxis"
+                          [yAxis]="barChartShowYAxis" [legend]="barChartShowLegend" [showXAxisLabel]="barChartShowXAxisLabel"
+                          [showYAxisLabel]="barChartShowYAxisLabel" [xAxisLabel]="barChartXAxisLabel" [yAxisLabel]="barChartYAxisLabel"
+                          (select)="onSelect($event)" style="font-size: 10px">
+                      </ngx-charts-bar-horizontal-2d>
+                  </div>
+              <!-- </div> -->
+          </div>
+      </div>
+<!--Horizontal Bar Chart Ends -->
