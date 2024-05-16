@@ -16,6 +16,10 @@ export const Full_ROUTES: Routes = [
     loadChildren: './charts/charts.module#ChartsNg2Module'
   },
   {
+    path: 'tasklist',
+    loadChildren: './tasklist/tasklist.module#TasklistModule'
+  },
+  {
     path: 'CallBarcharts',
     loadChildren: './call-barchart/call-barchart.module#CallBarchartModule'
   },
