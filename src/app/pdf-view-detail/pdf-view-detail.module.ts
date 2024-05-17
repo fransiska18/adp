@@ -6,6 +6,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { PdfViewDetailComponent } from './pdf-view-detail.component';
 import { PdfViewDetailRoutingModule } from './pdf-view-detail-routing.module';
+import { Ng2SmartTableModule } from 'ng2-smart-table';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { PdfViewDetailRoutingModule } from './pdf-view-detail-routing.module';
     CommonModule,
     FormsModule,
     NgbModule,
-    SharingModule
+    SharingModule,
+    Ng2SmartTableModule
   ],
   declarations: [
     PdfViewDetailComponent,

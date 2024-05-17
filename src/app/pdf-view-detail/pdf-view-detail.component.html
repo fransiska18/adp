@@ -1,42 +1,183 @@
 <div *ngIf="data" class="container">
-  <div class="form-area">
+       <div class="col-6">
+              <div class="card">
+                     <div class="card-header">
+                            <h4 class="card-title" id="striped-row-layout-basic">Project Info</h4>
+                     </div>
+                     <div class="card-body">
+                            <div class="px-3">
+                                   <form class="form form-horizontal striped-rows form-bordered">
+                                          <div class="form-body">
+                                                 <ngb-accordion #acc="ngbAccordion">
+                                                        <ngb-panel id="1" title="Personal Info" class="form-section">
+                                                               <ng-template ngbPanelContent>
+                                                                      <div class="row">
+                                                                             <div class="col-md-6">
+                                                                                    <div class="form-group">
+                                                                                           <label for="Name">Name</label>
+                                                                                           <input type="text"
+                                                                                                  class="form-control"
+                                                                                                  id="Name"
+                                                                                                  name="Name"
+                                                                                                  [value]="data.read.Identity.Name"
+                                                                                                  [ngClass]="{'red-font': data.read.Identity.NameConfidence < 0.9}"
+                                                                                                  (click)="highlightField(data.read.Identity.NameCoordinates, data.read.Identity.PageNumber)"
+                                                                                                  >
+                                                                                    </div>
+                                                                             </div>
+                                                                             <div class="col-md-6">
+                                                                                    <div class="form-group">
+                                                                                           <label for="AccountNumber">Account Number</label>
+                                                                                           <input type="text"
+                                                                                                  class="form-control"
+                                                                                                  id="AccountNumber"
+                                                                                                  name="AccountNumber"
+                                                                                                  [value]="data.read.Identity.AccountNumber"
+                                                                                                  [ngClass]="{'red-font': data.read.Identity.AccountNumberConfidence < 0.9}"
+                                                                                                  (click)="highlightField(data.read.Identity.AccountNumberCoordinates, data.read.Identity.PageNumber)"
+                                                                                                  >
+                                                                                    </div>
+                                                                             </div>
+                                                                      </div>
+                                                                      <div class="row">
+                                                                             <div class="col-md-6">
+                                                                                    <div class="form-group">
+                                                                                           <label for="BankOffice">Bank Office</label>
+                                                                                           <input type="text"
+                                                                                                  class="form-control"
+                                                                                                  id="BankOffice"
+                                                                                                  name="BankOffice"
+                                                                                                  [value]="data.read.Identity.BankOffice"
+                                                                                                  [ngClass]="{'red-font': data.read.Identity.BankOfficerConfidence < 0.9}"
+                                                                                                  (click)="highlightField(data.read.Identity.BankOfficeCoordinates, data.read.Identity.PageNumber)"
+                                                                                                  >
+                                                                                    </div>
+                                                                             </div>
+                                                                             <div class="col-md-6">
+                                                                                    <div class="form-group">
+                                                                                           <label for="Product">Product</label>
+                                                                                           <input type="text"
+                                                                                                  class="form-control"
+                                                                                                  id="Product"
+                                                                                                  name="Product"
+                                                                                                  [value]="data.read.Identity.Product"
+                                                                                                  [ngClass]="{'red-font': data.read.Identity.ProductConfidence < 0.9}"
+                                                                                                  (click)="highlightField(data.read.Identity.ProductCoordinates, data.read.Identity.PageNumber)"
+                                                                                                  >
+                                                                                    </div>
+                                                                             </div>
+                                                                      </div>
+                                                                      <div class="row">
+                                                                             <div class="col-md-6">
+                                                                                    <div class="form-group">
+                                                                                           <label for="Currency">Currency</label>
+                                                                                           <input type="text"
+                                                                                                  class="form-control"
+                                                                                                  id="Currency"
+                                                                                                  name="Currency"
+                                                                                                  [value]="data.read.Identity.Currency"
+                                                                                                  [ngClass]="{'red-font': data.read.Identity.CurrencyConfidence < 0.9}"
+                                                                                                  (click)="highlightField(data.read.Identity.CurrencyCoordinates, data.read.Identity.PageNumber)"
+                                                                                                  >
+                                                                                    </div>
+                                                                             </div>
+                                                                             <div class="col-md-6">
+                                                                                    <div class="form-group">
+                                                                                           <label for="Address">Address</label>
+                                                                                           <textarea rows="5"
+                                                                                                  class="form-control"
+                                                                                                  id="Address"
+                                                                                                  name="Address"
+                                                                                                  [value]="data.read.Identity.Address"
+                                                                                                  [ngClass]="{'red-font': data.read.Identity.AddressConfidence < 0.9}"
+                                                                                                  (click)="highlightField(data.read.Identity.AddressCoordinates, data.read.Identity.PageNumber)"
+                                                                                                  >
+                                                                                           </textarea>
+                                                                                    </div>
+                                                                             </div>
+                                                                      </div>
+                                                               </ng-template>
+                                                        </ngb-panel>
+                                                        <ngb-panel id="2" title="Transaction History"
+                                                               class="form-section">
+                                                               <ng-template ngbPanelContent>
+                                                                      <section id="simple">
+                                                                             <div class="row text-left">
+                                                                                 <div class="col-sm-12">
+                                                                                     <div class="card">
+                                                                                         <div class="card-header">
+                                                                                             <h4 class="card-title">Transaction History</h4>
+                                                                                         </div>
+                                                                                         <div class="card-body">
+                                                                                             <div class="card-block">
+                                                                                                 <ng2-smart-table [settings]="settings" [source]="source" (userRowSelect)="onRowSelect($event)" 
+                                                                                                 (deleteConfirm)="onDeleteConfirm($event)" (editConfirm)="onSaveConfirm($event)" (createConfirm)="onCreateConfirm($event)">
+                                                                                           </ng2-smart-table>
+                                                                                             </div>
+                                                                                         </div>
+                                                                                     </div>
+                                                                                 </div>
+                                                                             </div>
+                                                                      </section>
+                                                               </ng-template>
+                                                        </ngb-panel>
+                                                 </ngb-accordion>
+                                          </div>
+
+                                          <div class="form-actions right">
+                                                 <button type="button" class="btn btn-raised btn-warning mr-1">
+                                                        <i class="ft-x"></i> Cancel
+                                                 </button>
+                                                 <button type="button" class="btn btn-raised btn-primary">
+                                                        <i class="fa fa-check-square-o"></i> Save
+                                                 </button>
+                                          </div>
+                                   </form>
+                            </div>
+                     </div>
+              </div>
+       </div>
+
+
+
+
+       <!-- <div class="form-area">
     <label>Account Number:</label>
     <br>
     <input type="text" name="accountNumber" [value]="data.read.Identity.AccountNumber"
-          [ngClass]="{'low-confidence': data.read.Identity.AccountNumberConfidence < 0.9}"
+          [ngClass]="{'red-font': data.read.Identity.AccountNumberConfidence < 0.9}"
            (click)="highlightField(data.read.Identity.AccountNumberCoordinates, data.read.Identity.PageNumber)">
     <br>
     <label>Address:</label>
     <br>
     <input type="text" name="Address" [value]="data.read.Identity.Address"
-          [ngClass]="{'low-confidence': data.read.Identity.AddressConfidence < 0.9}"
+          [ngClass]="{'red-font': data.read.Identity.AddressConfidence < 0.9}"
            (click)="highlightField(data.read.Identity.AddressCoordinates, data.read.Identity.PageNumber)">
     <br>
     <label>BankOffice:</label>
     <br>
     <input type="text" name="BankOffice" [value]="data.read.Identity.BankOffice"
-            [ngClass]="{'low-confidence': data.read.Identity.BankOfficeConfidence < 0.9}"
+            [ngClass]="{'red-font': data.read.Identity.BankOfficeConfidence < 0.9}"
            (click)="highlightField(data.read.Identity.BankOfficeCoordinates, data.read.Identity.PageNumber)">
     <br>
     <label>Currency:</label>
     <br>
     <input type="text" name="Currency" [value]="data.read.Identity.Currency"
-            [ngClass]="{'low-confidence': data.read.Identity.CurrencyConfidence < 0.9}"
+            [ngClass]="{'red-font': data.read.Identity.CurrencyConfidence < 0.9}"
            (click)="highlightField(data.read.Identity.CurrencyCoordinates, data.read.Identity.PageNumber)">
     <br>
     <label>Name:</label>
     <br>
     <input type="text" name="Name" [value]="data.read.Identity.Name"
-          [ngClass]="{'low-confidence': data.read.Identity.NameConfidence < 0.9}"
+          [ngClass]="{'red-font': data.read.Identity.NameConfidence < 0.9}"
            (click)="highlightField(data.read.Identity.NameCoordinates, data.read.Identity.PageNumber)">
     <br>
     <label>Product:</label>
     <br>
     <input type="text" name="Product" [value]="data.read.Identity.Product"
-          [ngClass]="{'low-confidence': data.read.Identity.ProductConfidence < 0.9}"
+          [ngClass]="{'red-font': data.read.Identity.ProductConfidence < 0.9}"
            (click)="highlightField(data.read.Identity.ProductCoordinates, data.read.Identity.PageNumber)">
     <br>
-    <!-- Additional form elements -->
-  </div>
-  <div #viewer class="viewer"></div>
+  </div> -->
+       <div #viewer class="viewer col-6"></div>
 </div>

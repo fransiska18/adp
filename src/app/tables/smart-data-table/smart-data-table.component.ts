@@ -13,13 +13,12 @@ export class SmartTableComponent {
     source: LocalDataSource;
     filterSource: LocalDataSource;
     alertSource: LocalDataSource;
-
+    
     constructor() {
         this.source = new LocalDataSource(tableData.data); // create the source
         this.filterSource = new LocalDataSource(tableData.filerdata); // create the source
         this.alertSource = new LocalDataSource(tableData.alertdata); // create the source
     }
-
     settings = tableData.settings;
     filtersettings = tableData.filtersettings;
     alertsettings = tableData.alertsettings;
@@ -53,6 +52,7 @@ export class SmartTableComponent {
 
     //  For confirm action On Delete
     onDeleteConfirm(event) {
+        console.log(tableData)
         if (window.confirm('Are you sure you want to delete?')) {
             event.confirm.resolve();
         } else {

@@ -3,13 +3,15 @@ import { HttpClient } from '@angular/common/http';
 import { Subject } from 'rxjs';
 import { ChangeDetectorRef } from '@angular/core';
 import WebViewer, { WebViewerInstance } from '@pdftron/webviewer';
+import { NgbPanelChangeEvent } from '@ng-bootstrap/ng-bootstrap';
+import { LocalDataSource } from 'ng2-smart-table';
 
 @Component({
   selector: 'app-pdf-view-detail',
   templateUrl: './pdf-view-detail.component.html',
   styleUrls: ['./pdf-view-detail.component.scss']
 })
-export class PdfViewDetailComponent implements AfterViewInit {
+export class PdfViewDetailComponent implements AfterViewInit, OnInit {
 
   data: any;
   wvInstance?: WebViewerInstance;
@@ -20,8 +22,55 @@ export class PdfViewDetailComponent implements AfterViewInit {
   isDataLoaded = false;
   hasClickedInput = false;
 
+  source: LocalDataSource;
+  settings = {
+    columns: {
+      Date: {
+        title: 'Date',
+        type: 'text',
+        filter:false,
+      },
+      Description: {
+        title: 'Description',
+        type: 'text',
+        filter:false,
+      },
+      Amount: {
+        title: 'Amount',
+        type: 'text',
+        filter:false,
+      },
+      EndingBalance: {
+        title: 'Ending Balance',
+        type: 'text',
+        filter:false,
+      },
+      Type: { title: 'Type' }
+    },
+    actions: {
+      add: true,
+      edit: true,
+      delete: true
+    },
+    delete:{
+      confirmDelete:true,
+      deleteButtonContent:"<i class='ft-x danger font-medium-1 mr-2'></i>"
+    },
+    edit:{
+      confirmSave:true,
+      editButtonContent:"<i class='ft-edit-2 info font-medium-1 mr-2'></i>"
+    },
+    add:{
+      confirmCreate:true
+    },
+    attr:{
+      class:"table table-responsive"
+    }
+  };
+
   constructor(private http: HttpClient, private cdr: ChangeDetectorRef) {
     this.documentLoaded$ = new Subject<void>();
+    this.source = new LocalDataSource([]);
   }
 
   ngOnInit() {
@@ -33,12 +82,13 @@ export class PdfViewDetailComponent implements AfterViewInit {
     const coor = googleX * scaleFactor;
     return coor;
   }
-
+  
   loadData() {
     this.http.get('../assets/json_rekorBRI1_rev2.json').subscribe(response => {
       this.data = response;
       console.log('Data loaded:', this.data); // Check what data looks like when loaded
       this.isDataLoaded = true;
+      this.source.load(this.data.read.TransactionHistory);
       this.cdr.detectChanges(); // Manually trigger change detection
       this.initializeWebViewer();
     }, error => {
@@ -56,13 +106,12 @@ export class PdfViewDetailComponent implements AfterViewInit {
       PageNumber: page,  // Adjust based on actual page number
       X: this.convertGoogleVisionToPDFTron(coordinates['x1']),
       Y: this.convertGoogleVisionToPDFTron(coordinates['y1']),
-      Width: (this.convertGoogleVisionToPDFTron(coordinates['x3'])) - (this.convertGoogleVisionToPDFTron(coordinates['x1'])) + this.dpi / 15,
-      Height: (this.convertGoogleVisionToPDFTron(coordinates['y3'])) - (this.convertGoogleVisionToPDFTron(coordinates['y1'])) + this.dpi / 15,
+      Width: (this.convertGoogleVisionToPDFTron(coordinates['x3'])) - (this.convertGoogleVisionToPDFTron(coordinates['x1'])) + this.dpi / 12,
+      Height: (this.convertGoogleVisionToPDFTron(coordinates['y3'])) - (this.convertGoogleVisionToPDFTron(coordinates['y1'])) + this.dpi / 12,
       Author: annotationManager.getCurrentUser(),
       FillColor: new Annotations.Color(0, 155, 0, 0.2),
       StrokeColor: new Annotations.Color(255, 0, 0),
       StrokeThickness: 2
-      
     });
     annotationManager.addAnnotation(rectangleAnnot);
     annotationManager.redrawAnnotation(rectangleAnnot);
@@ -143,4 +192,62 @@ export class PdfViewDetailComponent implements AfterViewInit {
     });
   }
 
+  onRowSelect(event: any): void {
+    const selectedRow = event.data;
+    const coordinatesArray = [
+      selectedRow.DateCoordinates,
+      selectedRow.AmountCoordinate,
+      selectedRow.DescriptionCoordinates,
+      selectedRow.EndingBalanceCoordinates
+    ];
+    console.log('coordinatesArray row:', coordinatesArray);
+    const minX1 = Math.min(...coordinatesArray.map(coordinates => coordinates.x1));
+
+    const maxX3 = Math.max(...coordinatesArray.map(coordinates => coordinates.x3));
+
+    const minY1 = Math.min(...coordinatesArray.map(coordinates => coordinates.y1));
+
+    const maxY3 = Math.max(...coordinatesArray.map(coordinates => coordinates.y3));
+
+
+    console.log('Selected row:', selectedRow);
+    // Assuming the selected row contains coordinates and page number
+    const coor ={
+    x1:minX1,
+    x3:maxX3,
+    y1:minY1,
+    y3:maxY3,
+    }
+    console.log('coor:',coor)
+    this.highlightField(coor, selectedRow.PageNumber);
+  }
+
+
+  onDeleteConfirm(event) {
+    if (window.confirm('Are you sure you want to delete?')) {
+        event.confirm.resolve();
+    } else {
+        event.confirm.reject();
+    }
+  }
+
+//  For confirm action On Save
+  onSaveConfirm(event) {
+      if (window.confirm('Are you sure you want to save?')) {
+          event.newData['name'] += ' + added in code';
+          event.confirm.resolve(event.newData);
+      } else {
+          event.confirm.reject();
+      }
+  }
+
+  //  For confirm action On Create
+  onCreateConfirm(event) {
+      if (window.confirm('Are you sure you want to create?')) {
+          event.newData['name'] += ' + added in code';
+          event.confirm.resolve(event.newData);
+      } else {
+          event.confirm.reject();
+      }
+  }
 }
