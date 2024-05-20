@@ -81,7 +81,7 @@ export class PdfViewDetailComponent implements AfterViewInit, OnInit {
       deleteButtonContent:"<i class='ft-x danger font-medium-1 mr-2'></i>"
     },
     edit:{
-      confirmSave:true,
+      confirmSave:false,
       editButtonContent:"<i class='ft-edit-2 info font-medium-1 mr-2'></i>"
     },
     add:{
