@@ -18,7 +18,7 @@ export class PdfViewDetailComponent implements AfterViewInit, OnInit {
   @ViewChild('viewer') viewer!: ElementRef;
   @Output() coreControlsEvent: EventEmitter<string> = new EventEmitter();
   private documentLoaded$: Subject<void>;
-  private dpi = 205;
+  private dpi = 200;
   isDataLoaded = false;
   hasClickedInput = false;
 
@@ -131,15 +131,16 @@ export class PdfViewDetailComponent implements AfterViewInit, OnInit {
 
     const rectangleAnnot = new Annotations.RectangleAnnotation({
       PageNumber: page,  // Adjust based on actual page number
-      X: this.convertGoogleVisionToPDFTron(coordinates['x1']),
-      Y: this.convertGoogleVisionToPDFTron(coordinates['y1']),
-      Width: (this.convertGoogleVisionToPDFTron(coordinates['x3'])) - (this.convertGoogleVisionToPDFTron(coordinates['x1'])) + this.dpi / 12,
-      Height: (this.convertGoogleVisionToPDFTron(coordinates['y3'])) - (this.convertGoogleVisionToPDFTron(coordinates['y1'])) + this.dpi / 12,
+      X: this.convertGoogleVisionToPDFTron(coordinates['x1'])- this.dpi / 30,
+      Y: this.convertGoogleVisionToPDFTron(coordinates['y1'])- this.dpi / 30,
+      Width: (this.convertGoogleVisionToPDFTron(coordinates['x3'])) - (this.convertGoogleVisionToPDFTron(coordinates['x1']))+ this.dpi / 15,
+      Height: (this.convertGoogleVisionToPDFTron(coordinates['y3'])) - (this.convertGoogleVisionToPDFTron(coordinates['y1']))+ this.dpi / 15,
       Author: annotationManager.getCurrentUser(),
       FillColor: new Annotations.Color(0, 155, 0, 0.2),
       StrokeColor: new Annotations.Color(255, 0, 0),
       StrokeThickness: 2
     });
+    console.log('coor pross:',this.convertGoogleVisionToPDFTron(coordinates['x1']),this.convertGoogleVisionToPDFTron(coordinates['y1']),(this.convertGoogleVisionToPDFTron(coordinates['x3'])) - (this.convertGoogleVisionToPDFTron(coordinates['x1'])) + this.dpi / 12,(this.convertGoogleVisionToPDFTron(coordinates['y3'])) - (this.convertGoogleVisionToPDFTron(coordinates['y1'])) + this.dpi / 12)
     annotationManager.addAnnotation(rectangleAnnot);
     annotationManager.redrawAnnotation(rectangleAnnot);
     documentViewer.setCurrentPage(page, true); // Adjust scrolling if necessary
@@ -206,8 +207,9 @@ export class PdfViewDetailComponent implements AfterViewInit, OnInit {
         'menuButton',
         'pageNavOverlay'
       ]);
-      this.wvInstance.UI.setFitMode('FitPage');
-      this.wvInstance.UI.FitMode.Zoom = '100%';
+      
+      this.wvInstance.UI.setFitMode('FitWidth');
+      // this.wvInstance.UI.FitMode.Zoom = '110%';
 
       this.coreControlsEvent.emit(instance.UI.LayoutMode.Single);
 
