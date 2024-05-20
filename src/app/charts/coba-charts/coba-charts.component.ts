@@ -21,14 +21,14 @@ export class CobachartsComponent{
         var leaddata = new columns();
         //leaddata.CmoName='reynard';
 
-        this._apiservice.getcolumns(leaddata)
-        .subscribe(
-            data=>{
-                console.log("Test");
-                this.lstcolumns=data;
-                console.log(this.lstcolumns);
-            }
-        )
+        // this._apiservice.getcolumns(leaddata)
+        // .subscribe(
+        //     data=>{
+        //         console.log("Test");
+        //         this.lstcolumns=data;
+        //         console.log(this.lstcolumns);
+        //     }
+        // )
     }
 }
 

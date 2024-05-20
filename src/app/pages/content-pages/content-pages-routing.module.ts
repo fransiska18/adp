@@ -9,7 +9,6 @@ import { LoginPageComponent } from "./login/login-page.component";
 import { MaintenancePageComponent } from "./maintenance/maintenance-page.component";
 import { RegisterPageComponent } from "./register/register-page.component";
 
-
 const routes: Routes = [
   {
     path: '',
@@ -34,8 +33,7 @@ const routes: Routes = [
         data: {
           title: 'Forgot Password Page'
         }
-      },   
-      
+      }, 
       {
         path: 'lockscreen',
         component: LockScreenPageComponent,

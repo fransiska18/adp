@@ -7,7 +7,13 @@ export var settings = {
     },
     name: {
       title: 'Full Name',
-      filter: false,
+      // filter: false,
+      valuePrepareFunction: (cell, row) => {
+        return `<span>${cell}</span>`;
+      },
+      cellClassFunction: (cell, row) => {
+        return row.id === 1 ? 'red-text' : '';
+      }
     },
     username: {
       title: 'User Name',

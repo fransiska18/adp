@@ -1,5 +1,5 @@
 import { Component, AfterViewChecked } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
+// import { TranslateService } from '@ngx-translate/core';
 
 @Component({
     selector: 'app-navbar',
@@ -13,10 +13,11 @@ export class NavbarComponent implements AfterViewChecked {
     placement = 'bottom-right'
     public isCollapsed = true;
 
-    constructor(public translate: TranslateService) {
-        const browserLang: string = translate.getBrowserLang();
-        translate.use(browserLang.match(/en|es|pt|de/) ? browserLang : 'en');       
-    }
+    constructor(){}
+    // constructor(public translate: TranslateService) {
+    //     const browserLang: string = translate.getBrowserLang();
+    //     translate.use(browserLang.match(/en|es|pt|de/) ? browserLang : 'en');       
+    // }
 
     ngAfterViewChecked() {
 
@@ -35,9 +36,9 @@ export class NavbarComponent implements AfterViewChecked {
     }
 
 
-    ChangeLanguage(language: string) {
-        this.translate.use(language);
-    }
+    // ChangeLanguage(language: string) {
+    //     this.translate.use(language);
+    // }
 
     ToggleClass() {
         if (this.toggleClass === 'ft-maximize') {

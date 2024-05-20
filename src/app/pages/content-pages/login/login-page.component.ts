@@ -14,11 +14,13 @@ export class LoginPageComponent {
 
     constructor(private router: Router,
         private route: ActivatedRoute) { }
-
+        
     // On submit button click    
     onSubmit() {
         this.loginForm.reset();
+        this.router.navigate(['tasklist']);
     }
+
     // On Forgot password link click
     onForgotPassword() {
         this.router.navigate(['forgotpassword'], { relativeTo: this.route.parent });
