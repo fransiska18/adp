@@ -29,21 +29,45 @@ export class PdfViewDetailComponent implements AfterViewInit, OnInit {
         title: 'Date',
         type: 'text',
         filter:false,
+        valuePrepareFunction: (cell, row) => {
+          if (row.DateConfidence < 0.9){
+            return `${cell} (WARNING!!!)`;
+          }
+          return cell;
+        },
       },
       Description: {
         title: 'Description',
         type: 'text',
         filter:false,
+        valuePrepareFunction: (cell, row) => {
+          if (row.DescriptionConfidence < 0.9){
+            return `${cell} (WARNING!!!)`;
+          }
+          return cell;
+        },
       },
       Amount: {
         title: 'Amount',
         type: 'text',
         filter:false,
+        valuePrepareFunction: (cell, row) => {
+          if (row.AmountConfidence < 0.9){
+            return `${cell} (WARNING!!!)`;
+          }
+          return cell;
+        },
       },
       EndingBalance: {
         title: 'Ending Balance',
         type: 'text',
         filter:false,
+        valuePrepareFunction: (cell, row) => {
+          if (row.EndingBalanceConfidence < 0.9){
+            return `${cell} (WARNING!!!)`;
+          }
+          return cell;
+        },
       },
       Type: { title: 'Type' }
     },
@@ -65,6 +89,9 @@ export class PdfViewDetailComponent implements AfterViewInit, OnInit {
     },
     attr:{
       class:"table table-responsive"
+    },
+    pager:{
+      perPage:6
     }
   };
 
