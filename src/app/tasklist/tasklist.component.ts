@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { apiservice } from '../callAPI/api.service';
+import { DataService } from 'app/data.service';
 
 @Component({
   selector: 'app-tasklist',
@@ -12,17 +13,17 @@ import { apiservice } from '../callAPI/api.service';
 export class TasklistComponent implements OnInit {
 
   data: any[] = [];
-  constructor(private apiService: apiservice, private router: Router) {}
+  constructor(private apiService: apiservice, private router: Router, private dataService: DataService) {}
 
   ngOnInit(): void {
-    this.apiService.getData().subscribe(data => {
-      this.data = data;
+    this.dataService.getJson("tasklist.json").subscribe(response => {
+      this.data = response;
     });
   }
 
   onEditClick(item: any): void {
     // Navigate to another page with the item's ID
-    // this.router.navigate(['/pdf-view-detail', item.id]);
-    this.router.navigate(['/pdf-view-detail']);
+    this.router.navigate(['/pdf-view-detail', item.id]);
+    // this.router.navigate(['/pdf-view-detail']);
   }
 }

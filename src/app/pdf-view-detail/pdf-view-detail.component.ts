@@ -5,6 +5,8 @@ import { ChangeDetectorRef } from '@angular/core';
 import WebViewer, { WebViewerInstance } from '@pdftron/webviewer';
 import { NgbPanelChangeEvent } from '@ng-bootstrap/ng-bootstrap';
 import { LocalDataSource } from 'ng2-smart-table';
+import { ActivatedRoute, Router } from '@angular/router';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-pdf-view-detail',
@@ -12,8 +14,9 @@ import { LocalDataSource } from 'ng2-smart-table';
   styleUrls: ['./pdf-view-detail.component.scss']
 })
 export class PdfViewDetailComponent implements AfterViewInit, OnInit {
-
+  item_id:any;
   data: any;
+  item:any;
   wvInstance?: WebViewerInstance;
   @ViewChild('viewer') viewer!: ElementRef;
   @Output() coreControlsEvent: EventEmitter<string> = new EventEmitter();
@@ -95,13 +98,20 @@ export class PdfViewDetailComponent implements AfterViewInit, OnInit {
     }
   };
 
-  constructor(private http: HttpClient, private cdr: ChangeDetectorRef) {
+  constructor(private http: HttpClient,
+    private cdr: ChangeDetectorRef,
+    private router: Router,
+    private route: ActivatedRoute,
+    private dataService: DataService) {
     this.documentLoaded$ = new Subject<void>();
     this.source = new LocalDataSource([]);
   }
 
   ngOnInit() {
-    this.loadData();
+    this.route.paramMap.subscribe(params => {
+      this.item_id = +params.get('id');
+      this.loadData();
+    });
   }
 
   convertGoogleVisionToPDFTron(googleX: number) {
@@ -111,13 +121,29 @@ export class PdfViewDetailComponent implements AfterViewInit, OnInit {
   }
   
   loadData() {
-    this.http.get('../assets/json_rekorBRI1_rev2.json').subscribe(response => {
-      this.data = response;
-      console.log('Data loaded:', this.data); // Check what data looks like when loaded
-      this.isDataLoaded = true;
-      this.source.load(this.data.read.TransactionHistory);
-      this.cdr.detectChanges(); // Manually trigger change detection
-      this.initializeWebViewer();
+    console.log("item_id: ",this.item_id)
+    this.dataService.getJson("tasklist.json").subscribe(response => {
+      this.item = response.find(response=>response.id===this.item_id)
+      if(this.item.status==='Done'){
+        this.settings.actions.add=false
+        this.settings.actions.delete=false
+        this.settings.actions.edit=false
+      }
+      this.dataService.getJson(this.item.file_json).subscribe(response1 => {
+        this.data = response1;
+        console.log('Data loaded:', this.data); // Check what data looks like when loaded
+        this.data.read.TransactionHistory.sort((a, b) => {
+          const dateA = new Date(a.Date);
+          const dateB = new Date(b.Date);
+          return dateA.getTime() - dateB.getTime(); // Ascending order
+        });
+        this.isDataLoaded = true;
+        this.source.load(this.data.read.TransactionHistory);
+        this.cdr.detectChanges(); // Manually trigger change detection
+        this.initializeWebViewer();
+      }, error1 => {
+        console.error('There was an error loading the data!', error1);
+      });
     }, error => {
       console.error('There was an error loading the data!', error);
     });
@@ -155,7 +181,7 @@ export class PdfViewDetailComponent implements AfterViewInit, OnInit {
   }
 
   ngAfterViewInit(): void {
-    if (this.isDataLoaded) {
+    if (this.isDataLoaded ) {
       this.initializeWebViewer();
     }
 
@@ -184,7 +210,7 @@ export class PdfViewDetailComponent implements AfterViewInit, OnInit {
   initializeWebViewer(): void {
     WebViewer({
       path: '../lib',
-      initialDoc: '../assets/Rekor BRI 1 (1).pdf',
+      initialDoc: this.item.file_pdf,
     }, this.viewer.nativeElement).then(instance => {
       this.wvInstance = instance;
       this.wvInstance.UI.disableElements([
@@ -278,5 +304,68 @@ export class PdfViewDetailComponent implements AfterViewInit, OnInit {
       } else {
           event.confirm.reject();
       }
+  }
+
+  onBackClick(): void {
+    this.router.navigate(['/tasklist']);
+  }
+
+  onSubmitClick(): void {
+    const updatedData = {
+      read: {
+        Identity: {
+          Name: (document.getElementById('Name') as HTMLInputElement).value,
+          AccountNumber: (document.getElementById('AccountNumber') as HTMLInputElement).value,
+          BankOffice: (document.getElementById('BankOffice') as HTMLInputElement).value,
+          Product: (document.getElementById('Product') as HTMLInputElement).value,
+          Currency: (document.getElementById('Currency') as HTMLInputElement).value,
+          Address: (document.getElementById('Address') as HTMLTextAreaElement).value,
+        },
+        TransactionHistory: this.source.getAll()
+      }
+    };
+
+    // Update the in-memory data object
+    this.data.read = updatedData.read;
+    console.log(this.data.read)
+
+    // Send updated data to backend
+    console.log(this.item.file_json)
+    this.dataService.updateJson(this.item.file_json,this.data,this.item_id, "Done").subscribe(response => {
+      console.log('Data successfully updated:', response); // Adjust the logging here
+      this.router.navigate(['/tasklist']);
+    }, error => {
+      console.error('There was an error updating the data!', error);
+    });
+  }
+
+  onSaveClick(): void {
+
+    const updatedData = {
+      read: {
+        Identity: {
+          Name: (document.getElementById('Name') as HTMLInputElement).value,
+          AccountNumber: (document.getElementById('AccountNumber') as HTMLInputElement).value,
+          BankOffice: (document.getElementById('BankOffice') as HTMLInputElement).value,
+          Product: (document.getElementById('Product') as HTMLInputElement).value,
+          Currency: (document.getElementById('Currency') as HTMLInputElement).value,
+          Address: (document.getElementById('Address') as HTMLTextAreaElement).value,
+        },
+        TransactionHistory: this.source.getAll()
+      }
+    };
+
+    // Update the in-memory data object
+    this.data.read = updatedData.read;
+    console.log(this.data.read)
+
+    // Send updated data to backend
+    console.log(this.item.file_json)
+    this.dataService.updateJson(this.item.file_json,this.data,this.item_id, "On Progress").subscribe(response => {
+      console.log('Data successfully updated:', response); // Adjust the logging here
+      this.router.navigate(['/tasklist']);
+    }, error => {
+      console.error('There was an error updating the data!', error);
+    });
   }
 }

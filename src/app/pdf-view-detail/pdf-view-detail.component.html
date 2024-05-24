@@ -2,15 +2,12 @@
     <div class="col-8 card-container">
         <div class="card">
             <div class="card-header">
-                <h4 class="card-title" id="striped-row-layout-basic">Project Info</h4>
             </div>
             <div class="card-body">
                 <div class="px-3">
                     <form class="form form-horizontal striped-rows form-bordered">
                         <div class="form-body">
-                            <ngb-accordion #acc="ngbAccordion">
-                                <ngb-panel id="1" title="Personal Info" class="form-section">
-                                    <ng-template ngbPanelContent>
+                            <h5 class="card-title"> Personal Information</h5>
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <div class="form-group">
@@ -21,7 +18,9 @@
                                                         name="Name"
                                                         [value]="data.read.Identity.Name"
                                                         [ngClass]="{'red-font': data.read.Identity.NameConfidence < 0.9}"
-                                                        (click)="highlightField(data.read.Identity.NameCoordinates, data.read.Identity.PageNumber)">
+                                                        (click)="highlightField(data.read.Identity.NameCoordinates, data.read.Identity.PageNumber)"
+                                                        [disabled]="item.status==='Done'"
+                                                        >
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
@@ -33,7 +32,9 @@
                                                         name="AccountNumber"
                                                         [value]="data.read.Identity.AccountNumber"
                                                         [ngClass]="{'red-font': data.read.Identity.AccountNumberConfidence < 0.9}"
-                                                        (click)="highlightField(data.read.Identity.AccountNumberCoordinates, data.read.Identity.PageNumber)">
+                                                        (click)="highlightField(data.read.Identity.AccountNumberCoordinates, data.read.Identity.PageNumber)"
+                                                        [disabled]="item.status==='Done'"
+                                                        >
                                                 </div>
                                             </div>
                                         </div>
@@ -47,7 +48,9 @@
                                                         name="BankOffice"
                                                         [value]="data.read.Identity.BankOffice"
                                                         [ngClass]="{'red-font': data.read.Identity.BankOfficerConfidence < 0.9}"
-                                                        (click)="highlightField(data.read.Identity.BankOfficeCoordinates, data.read.Identity.PageNumber)">
+                                                        (click)="highlightField(data.read.Identity.BankOfficeCoordinates, data.read.Identity.PageNumber)"
+                                                        [disabled]="item.status==='Done'"
+                                                        >
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
@@ -59,7 +62,9 @@
                                                         name="Product"
                                                         [value]="data.read.Identity.Product"
                                                         [ngClass]="{'red-font': data.read.Identity.ProductConfidence < 0.9}"
-                                                        (click)="highlightField(data.read.Identity.ProductCoordinates, data.read.Identity.PageNumber)">
+                                                        (click)="highlightField(data.read.Identity.ProductCoordinates, data.read.Identity.PageNumber)"
+                                                        [disabled]="item.status==='Done'"
+                                                        >
                                                 </div>
                                             </div>
                                         </div>
@@ -73,7 +78,9 @@
                                                         name="Currency"
                                                         [value]="data.read.Identity.Currency"
                                                         [ngClass]="{'red-font': data.read.Identity.CurrencyConfidence < 0.9}"
-                                                        (click)="highlightField(data.read.Identity.CurrencyCoordinates, data.read.Identity.PageNumber)">
+                                                        (click)="highlightField(data.read.Identity.CurrencyCoordinates, data.read.Identity.PageNumber)"
+                                                        [disabled]="item.status==='Done'"
+                                                        >
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
@@ -85,20 +92,21 @@
                                                         name="Address"
                                                         [value]="data.read.Identity.Address"
                                                         [ngClass]="{'red-font': data.read.Identity.AddressConfidence < 0.9}"
-                                                        (click)="highlightField(data.read.Identity.AddressCoordinates, data.read.Identity.PageNumber)">
+                                                        (click)="highlightField(data.read.Identity.AddressCoordinates, data.read.Identity.PageNumber)"
+                                                        [disabled]="item.status==='Done'"
+                                                        >
                                                     </textarea>
                                                 </div>
                                             </div>
                                         </div>
-                                    </ng-template>
-                                </ngb-panel>
-                                <ngb-panel id="2" title="Transaction History" class="form-section">
-                                    <ng-template ngbPanelContent>
                                         <section id="simple">
+                                            
                                             <div class="row text-left">
                                                 <div class="col-sm-12">
                                                     <div class="card">
-                                                        <div class="card-header"></div>
+                                                        <div class="card-header">
+                                                            <h5 class="card-title">Transaction History</h5>
+                                                        </div>
                                                         <div class="card-body">
                                                             <div class="card-block">
                                                                 <ng2-smart-table [settings]="settings" [source]="source" (userRowSelect)="onRowSelect($event)"
@@ -110,18 +118,15 @@
                                                 </div>
                                             </div>
                                         </section>
-                                    </ng-template>
-                                </ngb-panel>
-                            </ngb-accordion>
                         </div>
                         <div class="form-actions right">
-                            <button type="button" class="btn btn-raised btn-warning mr-1">
+                            <button type="button" class="btn btn-raised btn-warning mr-1" (click)="onBackClick()"> 
                                    <i class="ft-x"></i> Back
                             </button>
-                            <button type="button" class="btn btn-raised btn-info mr-1">
+                            <button *ngIf="item.status !== 'Done'" type="button" class="btn btn-raised btn-info mr-1" (click)="onSaveClick()">
                                    <i class="ft-save"></i> Save & Back
                             </button>
-                            <button type="button" class="btn btn-raised btn-primary">
+                            <button *ngIf="item.status !== 'Done'" type="button" class="btn btn-raised btn-primary" (click)="onSubmitClick()">
                                    <i class="fa fa-check-square-o"></i> Submit
                             </button>
                             

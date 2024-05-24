@@ -92,7 +92,7 @@ export const Full_ROUTES: Routes = [
     loadChildren: './office/office.module#OfficeModule'
   },
   {
-    path: 'pdf-view-detail',
+    path: 'pdf-view-detail/:id',
     loadChildren: './pdf-view-detail/pdf-view-detail.module#PdfViewDetailModule'
   }
 ];

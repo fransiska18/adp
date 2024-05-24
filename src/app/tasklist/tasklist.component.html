@@ -38,15 +38,16 @@
                                   <td>{{ item.pagenum }}</td>
                                   <td>{{ item.status }}</td>
                                   <td>
-                                      <a class="info p-0" data-original-title="" title="">
-                                          <i class="ft-eye font-medium-3 mr-2"></i>
+                                      <a [ngClass]="{'success p-0': item.status !== 'Done', 'info p-0': item.status === 'Done'}" (click)="onEditClick(item)" data-original-title="" title="">
+                                          <i [ngClass]="{'ft-edit-2 font-medium-4 mr-2': item.status !== 'Done', 'ft-eye font-medium-3 mr-2': item.status === 'Done'}"></i>
                                       </a>
-                                      <a *ngIf="item.status !== 'Done'" class="success p-0" (click)="onEditClick(item)" data-original-title="" title="">
+                                      <!-- <a *ngIf="item.status !== 'Done'" class="success p-0" (click)="onEditClick(item)" data-original-title="" title="">
                                           <i class="ft-edit-2 font-medium-3 mr-2"></i>
-                                      </a>
+                                      </a> -->
                                       <!-- <a class="danger p-0" data-original-title="" title="">
                                           <i class="ft-x font-medium-3 mr-2"></i>
                                       </a> -->
+                                    
                                   </td>
                               </tr>
                           </tbody>
