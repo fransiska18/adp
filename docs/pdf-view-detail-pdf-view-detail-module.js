@@ -298,7 +298,7 @@ var PdfViewDetailComponent = /** @class */ (function () {
     PdfViewDetailComponent.prototype.initializeWebViewer = function () {
         var _this = this;
         _pdftron_webviewer__WEBPACK_IMPORTED_MODULE_3___default()({
-            path: '../lib',
+            path: 'lib',
             initialDoc: this.item.file_pdf,
         }, this.viewer.nativeElement).then(function (instance) {
             _this.wvInstance = instance;
