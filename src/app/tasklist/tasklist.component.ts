@@ -7,7 +7,6 @@ import { DataService } from 'app/data.service';
   selector: 'app-tasklist',
   templateUrl: './tasklist.component.html',
   styleUrls: ['./tasklist.component.scss']
-
 })
 
 export class TasklistComponent implements OnInit {
