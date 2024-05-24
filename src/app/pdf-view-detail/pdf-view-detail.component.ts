@@ -209,7 +209,7 @@ export class PdfViewDetailComponent implements AfterViewInit, OnInit {
 
   initializeWebViewer(): void {
     WebViewer({
-      path: '../lib',
+      path: 'lib',
       initialDoc: this.item.file_pdf,
     }, this.viewer.nativeElement).then(instance => {
       this.wvInstance = instance;
