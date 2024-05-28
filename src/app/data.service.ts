@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class DataService {
-  private apiUrl = 'http://localhost:3000';
+  private apiUrl = 'https://adp-backend-go3voyqswq-et.a.run.app';
 
   constructor(private http: HttpClient) {}
 
