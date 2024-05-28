@@ -33,12 +33,11 @@ app.post('/update-json', (req, res) => {
     //updated data here
     // console.log(updatedData.read.TransactionHistory)
     const FinalData = JSON.parse(data);
-    FinalData.read.Identity.AccountNumber = updatedData.read.Identity.AccountNumber
-    FinalData.read.Identity.Address = updatedData.read.Identity.Address
-    FinalData.read.Identity.BankOffice = updatedData.read.Identity.BankOffice
-    FinalData.read.Identity.Currency = updatedData.read.Identity.Currency
-    FinalData.read.Identity.Name = updatedData.read.Identity.Name
-    FinalData.read.Identity.Product = updatedData.read.Identity.Product
+    FinalData.read.Identity.account_number = updatedData.read.Identity.account_number
+    FinalData.read.Identity.address = updatedData.read.Identity.address
+    FinalData.read.Identity.bank_office = updatedData.read.Identity.bank_office
+    FinalData.read.Identity.currency = updatedData.read.Identity.currency
+    FinalData.read.Identity.name = updatedData.read.Identity.name
     FinalData.read.TransactionHistory = updatedData.read.TransactionHistory.__zone_symbol__value
     
     fs.writeFile(filePath, JSON.stringify(FinalData, null, 2), (err) => {

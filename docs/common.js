@@ -26,7 +26,7 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 var DataService = /** @class */ (function () {
     function DataService(http) {
         this.http = http;
-        this.apiUrl = 'https://adp-backend-go3voyqswq-et.a.run.app';
+        this.apiUrl = 'http://localhost:3000';
     }
     // Method to fetch the JSON file from the backend
     DataService.prototype.getJson = function (file_json) {

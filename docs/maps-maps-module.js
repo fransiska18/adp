@@ -78,7 +78,7 @@ module.exports = "<!--Basic google map starts-->\r\n<section id=\"map\">\r\n    
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "agm-map {\n  height: 300px; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbWFwcy9nb29nbGUtbWFwL0Q6XFxCU0ErIEhJVExcXFRlbXBsYXRlIEJTQVxcYWRwL3NyY1xcYXBwXFxtYXBzXFxnb29nbGUtbWFwXFxnb29nbGUtbWFwLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsY0FBYSxFQUNkIiwiZmlsZSI6InNyYy9hcHAvbWFwcy9nb29nbGUtbWFwL2dvb2dsZS1tYXAuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJhZ20tbWFwIHtcclxuICBoZWlnaHQ6IDMwMHB4O1xyXG59Il19 */"
+module.exports = "agm-map {\n  height: 300px; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbWFwcy9nb29nbGUtbWFwL0Q6XFxCU0ErIEhJVExcXEJTQSBnaXRodWJcXGFkcC9zcmNcXGFwcFxcbWFwc1xcZ29vZ2xlLW1hcFxcZ29vZ2xlLW1hcC5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGNBQWEsRUFDZCIsImZpbGUiOiJzcmMvYXBwL21hcHMvZ29vZ2xlLW1hcC9nb29nbGUtbWFwLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiYWdtLW1hcCB7XHJcbiAgaGVpZ2h0OiAzMDBweDtcclxufSJdfQ== */"
 
 /***/ }),
 

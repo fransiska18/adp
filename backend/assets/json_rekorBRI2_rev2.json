@@ -1,216 +1,136 @@
 {
-    "read": {
-        "Identity": {
-            "PageNumber": 1,
-            "AccountNumber": "622601008552500",
-            "AccountNumberConfidence": 0.9907136253333334,
-            "AccountNumberCoordinates": {
-                "x1": 324,
-                "y1": 585,
-                "x2": 528,
-                "y2": 584,
-                "x3": 528,
-                "y3": 603,
-                "x4": 324,
-                "y4": 603
-            },
-            "BankOffice": "UNIT PUGER JEMBER",
-            "BankOfficeConfidence": 0.9915947013333333,
-            "BankOfficeCoordinates": {
-                "x1": 1207,
-                "y1": 587,
-                "x2": 1418,
-                "y2": 587,
-                "x3": 1418,
-                "y3": 603,
-                "x4": 1207,
-                "y4": 603
-            },
-            "Name": "RAFFLI FIRMANSYAH",
-            "NameConfidence": 0.993455410625,
-            "NameCoordinates": {
-                "x1": 112,
-                "y1": 390,
-                "x2": 409,
-                "y2": 390,
-                "x3": 409,
-                "y3": 411,
-                "x4": 112,
-                "y4": 411
-            },
-            "Product": "BritAma Kar Khusus",
-            "ProductConfidence": 0.935915611875,
-            "ProductCoordinates": {
-                "x1": 349,
-                "y1": 664,
-                "x2": 542,
-                "y2": 664,
-                "x3": 542,
-                "y3": 681,
-                "x4": 349,
-                "y4": 681
-            },
-            "Address": " DUSUN KRAJAN 02 , Rt.02 / 10 , JEMBER KAB . PUGER JEMBER KAB .",
-            "AddressConfidence": 0.9252587119148936,
-            "AddressCoordinates": {
-                "x1": 111,
-                "y1": 468,
-                "x2": 727,
-                "y2": 468,
-                "x3": 727,
-                "y3": 523,
-                "x4": 111,
-                "y4": 523
-            },
-            "Currency": "IDR",
-            "CurrencyConfidence": 0.9900184666666667,
-            "CurrencyCoordinates": {
-                "x1": 323,
-                "y1": 743,
-                "x2": 385,
-                "y2": 742,
-                "x3": 385,
-                "y3": 760,
-                "x4": 323,
-                "y4": 760
-            },
-            "DebitTransactionsLast3Months": 6000.0,
-            "CreditTransactionsLast3Months": 100000.0,
-            "EndingBalance": 0.9872458042105263,
-            "TotalTransactionsCreditLast3Months": 1,
-            "TotalTransactionsDebitLast3Months": 1,
-            "TotalTransactionsLast3Months": 2,
-            "WarningMutasi1": false,
-            "WarningMutasi1Description": "",
-            "AlternateIncome1": 0,
-            "AlternateIncome2": 0,
-            "AlternateIncome3": 100000.0,
-            "AlternateIncome4": 33000.0,
-            "AlternateIncomeFinal": 33000.0
-        },
-        "TransactionHistory": [
-            {
-                "PageNumber": 1.0,
-                "Amount": 6000.0,
-                "AmountConfidence": 0.9901121575,
-                "AmountCoordinate": {
-                    "x1": 1145,
-                    "y1": 944,
-                    "x2": 1227,
-                    "y2": 944,
-                    "x3": 1227,
-                    "y3": 962,
-                    "x4": 1145,
-                    "y4": 962
-                },
-                "Date": "2023-05-20",
-                "DateConfidence": 0.98772538125,
-                "DateCoordinates": {
-                    "x1": 105,
-                    "y1": 943,
-                    "x2": 276,
-                    "y2": 942,
-                    "x3": 276,
-                    "y3": 960,
-                    "x4": 105,
-                    "y4": 961
-                },
-                "Description": "Admin Fee",
-                "DescriptionConfidence": 0.9928401375,
-                "DescriptionCoordinates": {
-                    "x1": 305,
-                    "y1": 942,
-                    "x2": 403,
-                    "y2": 943,
-                    "x3": 403,
-                    "y3": 958,
-                    "x4": 305,
-                    "y4": 958
-                },
-                "EndingBalance": 59698.0,
-                "EndingBalanceConfidence": 0.9877927955555555,
-                "EndingBalanceCoordinates": {
-                    "x1": 1669,
-                    "y1": 944,
-                    "x2": 1762,
-                    "y2": 944,
-                    "x3": 1762,
-                    "y3": 961,
-                    "x4": 1669,
-                    "y4": 961
-                },
-                "Type": "DEBIT"
-            },
-            {
-                "PageNumber": 1.0,
-                "Amount": 100000.0,
-                "AmountConfidence": 0.9899946214285714,
-                "AmountCoordinate": {
-                    "x1": 1389,
-                    "y1": 1001,
-                    "x2": 1491,
-                    "y2": 1002,
-                    "x3": 1491,
-                    "y3": 1020,
-                    "x4": 1389,
-                    "y4": 1019
-                },
-                "Date": "2023-05-29",
-                "DateConfidence": 0.9877059990625,
-                "DateCoordinates": {
-                    "x1": 104,
-                    "y1": 1001,
-                    "x2": 277,
-                    "y2": 1000,
-                    "x3": 277,
-                    "y3": 1019,
-                    "x4": 104,
-                    "y4": 1020
-                },
-                "Description": "BFST622601008552500DIMAS APRIAJ : BMRIIDJA 20230529BMRIIDJA01000225240896 ESB : BFST : 0008N : 20230529BRINIDJA110904070",
-                "DescriptionConfidence": 0.9864812223931624,
-                "DescriptionCoordinates": {
-                    "x1": 307,
-                    "y1": 1002,
-                    "x2": 758,
-                    "y2": 1002,
-                    "x3": 758,
-                    "y3": 1068,
-                    "x4": 307,
-                    "y4": 1068
-                },
-                "EndingBalance": 159698.0,
-                "EndingBalanceConfidence": 0.9872458042105263,
-                "EndingBalanceCoordinates": {
-                    "x1": 1659,
-                    "y1": 1003,
-                    "x2": 1761,
-                    "y2": 1003,
-                    "x3": 1761,
-                    "y3": 1019,
-                    "x4": 1659,
-                    "y4": 1019
-                },
-                "Type": "CREDIT"
-            }
-        ],
-        "TransactionSummary": [
-            {
-                "Credit": 100000.0,
-                "CreditConfidence": 0.9897508174999999,
-                "Debit": 6000.0,
-                "DebitConfidence": 0.9901121575,
-                "CreditFreq": 1,
-                "DebitFreq": 1,
-                "BeginningBalance": 65698.0,
-                "BeginningBalanceConfidence": 0.9877927955555555,
-                "EndingBalance": 159698.0,
-                "EndingBalanceConfidence": 0.9872458042105263,
-                "Period": "2023-05-01",
-                "Period_date_confidence": 0.9393141634375,
-                "WarningMutasi2": false,
-                "WarningMutasi2Description": ""
-            }
-        ]
-    }
+	"read": {
+		"Identity": {
+			"page_number": 1,
+			"account_number": "622601008552500",
+			"account_number_confidence": 0.993,
+			"account_number_coordinate": {
+				"x": 347.0,
+				"y": 581.0,
+				"w": 183.0,
+				"h": 26.0
+			},
+			"bank_office": "UNIT PUGER JEMBER",
+			"bank_office_confidence": 0.9793333333333333,
+			"bank_office_coordinate": {
+				"x": 1204.0,
+				"y": 581.0,
+				"w": 212.0,
+				"h": 26.0
+			},
+			"name": "RAFFLI FIRMANSYAH",
+			"name_confidence": 0.993,
+			"name_coordinate": {
+				"x": 108.0,
+				"y": 381.0,
+				"w": 306.0,
+				"h": 33.0
+			},
+			"address": "DUSUN KRAJAN 02,Rt.02/10,JEMBER KAB. PUGER JEMBER KAB.",
+			"address_confidence": 0.9857142857142857,
+			"address_coordinate": {
+				"x": 108.0,
+				"y": 461.0,
+				"w": 621.0,
+				"h": 65.0
+			},
+			"currency": "IDR",
+			"currency_confidence": 0.995,
+			"currency_coordinate": {
+				"x": 347.0,
+				"y": 740.0,
+				"w": 36.0,
+				"h": 23.0
+			}
+		},
+		"TransactionHistory": [
+			{
+				"page_number": 1,
+				"date": "20-05-2023",
+				"date_confidence": 99.83981323242188,
+				"date_coordinate": {
+					"x": 87.14176129549742,
+					"y": 921.0753831863403,
+					"w": 208.6205119639635,
+					"h": 60.172547267749909
+				},
+				"description": "Admin Fee",
+				"description_confidence": 99.77114486694336,
+				"description_coordinate": {
+					"x": 295.74562177062037,
+					"y": 920.7143673598766,
+					"w": 514.2021998763084,
+					"h": 60.38801355846226
+				},
+				"type": "DEBIT",
+				"type_confidence": 99.0,
+				"type_coordinate": {
+					"x": 942.9806989431381,
+					"y": 920.4137183427811,
+					"w": 295.15135020017626,
+					"h": 60.237083464860919
+				},
+				"amount": 6000.0,
+				"amount_confidence": 99.95283508300781,
+				"amount_coordinate": {
+					"x": 942.9806989431381,
+					"y": 920.4137183427811,
+					"w": 295.15135020017626,
+					"h": 60.237083464860919
+				},
+				"ending_balance": 59698.0,
+				"ending_balance_confidence": 99.89679718017578,
+				"ending_balance_coordinate": {
+					"x": 1502.2337025403977,
+					"y": 920.037227421999,
+					"w": 272.1617625653744,
+					"h": 60.2234120555222
+				}
+			},
+			{
+				"page_number": 1,
+				"date": "29-05-2023",
+				"date_confidence": 99.87213134765625,
+				"date_coordinate": {
+					"x": 87.15687084943056,
+					"y": 981.1023678481579,
+					"w": 208.63490335643292,
+					"h": 106.46662738919258
+				},
+				"description": "BFST622601008552500DIMAS APRIAJ:BMRIIDJA 20230529BMRIIDJA01000225240896 ESB:BFST:0008N:20230529BRINIDJA110904070",
+				"description_confidence": 88.96037673950196,
+				"description_coordinate": {
+					"x": 295.76226621866229,
+					"y": 980.7436523735523,
+					"w": 514.2218014597893,
+					"h": 106.68145759776235
+				},
+				"type": "CREDIT",
+				"type_confidence": 99.0,
+				"type_coordinate": {
+					"x": 1238.1321054697037,
+					"y": 980.2606481909752,
+					"w": 264.17248383164408,
+					"h": 106.51438583061099
+				},
+				"amount": 100000.0,
+				"amount_confidence": 96.31034088134766,
+				"amount_coordinate": {
+					"x": 1238.1321054697037,
+					"y": 980.2606481909752,
+					"w": 264.17248383164408,
+					"h": 106.51438583061099
+				},
+				"ending_balance": 159698.0,
+				"ending_balance_confidence": 99.943359375,
+				"ending_balance_coordinate": {
+					"x": 1502.2592747211457,
+					"y": 980.0708343088627,
+					"w": 272.1850535273552,
+					"h": 106.52204495668411
+				}
+			}
+		],
+		"TransactionSummary": []
+	}
 }

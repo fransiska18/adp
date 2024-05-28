@@ -28,51 +28,51 @@ export class PdfViewDetailComponent implements AfterViewInit, OnInit {
   source: LocalDataSource;
   settings = {
     columns: {
-      Date: {
+      date: {
         title: 'Date',
         type: 'text',
         filter:false,
         valuePrepareFunction: (cell, row) => {
-          if (row.DateConfidence < 0.9){
+          if (row.date_confidence < 90){
             return `${cell} (WARNING!!!)`;
           }
           return cell;
         },
       },
-      Description: {
+      description: {
         title: 'Description',
         type: 'text',
         filter:false,
         valuePrepareFunction: (cell, row) => {
-          if (row.DescriptionConfidence < 0.9){
+          if (row.description_confidence < 90){
             return `${cell} (WARNING!!!)`;
           }
           return cell;
         },
       },
-      Amount: {
+      amount: {
         title: 'Amount',
         type: 'text',
         filter:false,
         valuePrepareFunction: (cell, row) => {
-          if (row.AmountConfidence < 0.9){
+          if (row.amount_confidence < 90){
             return `${cell} (WARNING!!!)`;
           }
           return cell;
         },
       },
-      EndingBalance: {
+      ending_balance: {
         title: 'Ending Balance',
         type: 'text',
         filter:false,
         valuePrepareFunction: (cell, row) => {
-          if (row.EndingBalanceConfidence < 0.9){
+          if (row.ending_balance_confidence < 90){
             return `${cell} (WARNING!!!)`;
           }
           return cell;
         },
       },
-      Type: { title: 'Type' }
+      type: { title: 'Type' }
     },
     actions: {
       add: true,
@@ -133,8 +133,8 @@ export class PdfViewDetailComponent implements AfterViewInit, OnInit {
         this.data = response1;
         console.log('Data loaded:', this.data); // Check what data looks like when loaded
         this.data.read.TransactionHistory.sort((a, b) => {
-          const dateA = new Date(a.Date);
-          const dateB = new Date(b.Date);
+          const dateA = new Date(a.date);
+          const dateB = new Date(b.date);
           return dateA.getTime() - dateB.getTime(); // Ascending order
         });
         this.isDataLoaded = true;
@@ -153,20 +153,20 @@ export class PdfViewDetailComponent implements AfterViewInit, OnInit {
     const { documentViewer, Annotations, annotationManager } = this.wvInstance!.Core;
 
     // Clear existing annotations if necessary
+    console.log(coordinates)
     annotationManager.deleteAnnotations(annotationManager.getAnnotationsList());
 
     const rectangleAnnot = new Annotations.RectangleAnnotation({
       PageNumber: page,  // Adjust based on actual page number
-      X: this.convertGoogleVisionToPDFTron(coordinates['x1'])- this.dpi / 30,
-      Y: this.convertGoogleVisionToPDFTron(coordinates['y1'])- this.dpi / 30,
-      Width: (this.convertGoogleVisionToPDFTron(coordinates['x3'])) - (this.convertGoogleVisionToPDFTron(coordinates['x1']))+ this.dpi / 15,
-      Height: (this.convertGoogleVisionToPDFTron(coordinates['y3'])) - (this.convertGoogleVisionToPDFTron(coordinates['y1']))+ this.dpi / 15,
+      X: this.convertGoogleVisionToPDFTron(coordinates['x'])- this.dpi / 30,
+      Y: this.convertGoogleVisionToPDFTron(coordinates['y'])- this.dpi / 30,
+      Width: (this.convertGoogleVisionToPDFTron(coordinates['w']))+ this.dpi / 15,
+      Height: (this.convertGoogleVisionToPDFTron(coordinates['h']))+ this.dpi / 15,
       Author: annotationManager.getCurrentUser(),
       FillColor: new Annotations.Color(0, 155, 0, 0.2),
       StrokeColor: new Annotations.Color(255, 0, 0),
       StrokeThickness: 2
     });
-    console.log('coor pross:',this.convertGoogleVisionToPDFTron(coordinates['x1']),this.convertGoogleVisionToPDFTron(coordinates['y1']),(this.convertGoogleVisionToPDFTron(coordinates['x3'])) - (this.convertGoogleVisionToPDFTron(coordinates['x1'])) + this.dpi / 12,(this.convertGoogleVisionToPDFTron(coordinates['y3'])) - (this.convertGoogleVisionToPDFTron(coordinates['y1'])) + this.dpi / 12)
     annotationManager.addAnnotation(rectangleAnnot);
     annotationManager.redrawAnnotation(rectangleAnnot);
     documentViewer.setCurrentPage(page, true); // Adjust scrolling if necessary
@@ -250,31 +250,38 @@ export class PdfViewDetailComponent implements AfterViewInit, OnInit {
   onRowSelect(event: any): void {
     const selectedRow = event.data;
     const coordinatesArray = [
-      selectedRow.DateCoordinates,
-      selectedRow.AmountCoordinate,
-      selectedRow.DescriptionCoordinates,
-      selectedRow.EndingBalanceCoordinates
+      selectedRow.date_coordinate,
+      selectedRow.amount_coordinate,
+      selectedRow.description_coordinate,
+      selectedRow.ending_balance_coordinate
     ];
     console.log('coordinatesArray row:', coordinatesArray);
-    const minX1 = Math.min(...coordinatesArray.map(coordinates => coordinates.x1));
 
-    const maxX3 = Math.max(...coordinatesArray.map(coordinates => coordinates.x3));
+    const minx = Math.min(...coordinatesArray.map(coordinates => coordinates.x));
 
-    const minY1 = Math.min(...coordinatesArray.map(coordinates => coordinates.y1));
+    const miny = Math.min(...coordinatesArray.map(coordinates => coordinates.y));
 
-    const maxY3 = Math.max(...coordinatesArray.map(coordinates => coordinates.y3));
+    const maxX = Math.max(...coordinatesArray.map(coordinates => coordinates.x));
+    
+    const maxXIndex = coordinatesArray
+    .map(coordinates => coordinates.x)
+    .reduce((maxIndex, currentValue, currentIndex, array) => currentValue > array[maxIndex] ? currentIndex : maxIndex, 0);
+
+    const sum_w = (coordinatesArray[maxXIndex].w + maxX) - minx
+
+    const max_h = Math.max(...coordinatesArray.map(coordinates => coordinates.h));
 
 
     console.log('Selected row:', selectedRow);
     // Assuming the selected row contains coordinates and page number
     const coor ={
-    x1:minX1,
-    x3:maxX3,
-    y1:minY1,
-    y3:maxY3,
+    x:minx,
+    y:miny,
+    w:sum_w,
+    h:max_h,
     }
     console.log('coor:',coor)
-    this.highlightField(coor, selectedRow.PageNumber);
+    this.highlightField(coor, selectedRow.page_number);
   }
 
 
@@ -314,12 +321,11 @@ export class PdfViewDetailComponent implements AfterViewInit, OnInit {
     const updatedData = {
       read: {
         Identity: {
-          Name: (document.getElementById('Name') as HTMLInputElement).value,
-          AccountNumber: (document.getElementById('AccountNumber') as HTMLInputElement).value,
-          BankOffice: (document.getElementById('BankOffice') as HTMLInputElement).value,
-          Product: (document.getElementById('Product') as HTMLInputElement).value,
-          Currency: (document.getElementById('Currency') as HTMLInputElement).value,
-          Address: (document.getElementById('Address') as HTMLTextAreaElement).value,
+          name: (document.getElementById('Name') as HTMLInputElement).value,
+          account_number: (document.getElementById('AccountNumber') as HTMLInputElement).value,
+          bank_office: (document.getElementById('BankOffice') as HTMLInputElement).value,
+          currency: (document.getElementById('Currency') as HTMLInputElement).value,
+          address: (document.getElementById('Address') as HTMLTextAreaElement).value,
         },
         TransactionHistory: this.source.getAll()
       }
@@ -344,12 +350,11 @@ export class PdfViewDetailComponent implements AfterViewInit, OnInit {
     const updatedData = {
       read: {
         Identity: {
-          Name: (document.getElementById('Name') as HTMLInputElement).value,
-          AccountNumber: (document.getElementById('AccountNumber') as HTMLInputElement).value,
-          BankOffice: (document.getElementById('BankOffice') as HTMLInputElement).value,
-          Product: (document.getElementById('Product') as HTMLInputElement).value,
-          Currency: (document.getElementById('Currency') as HTMLInputElement).value,
-          Address: (document.getElementById('Address') as HTMLTextAreaElement).value,
+          name: (document.getElementById('Name') as HTMLInputElement).value,
+          account_number: (document.getElementById('AccountNumber') as HTMLInputElement).value,
+          bank_office: (document.getElementById('BankOffice') as HTMLInputElement).value,
+          currency: (document.getElementById('Currency') as HTMLInputElement).value,
+          address: (document.getElementById('Address') as HTMLTextAreaElement).value,
         },
         TransactionHistory: this.source.getAll()
       }

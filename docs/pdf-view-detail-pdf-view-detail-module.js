@@ -70,7 +70,7 @@ var PdfViewDetailRoutingModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div *ngIf=\"data\" class=\"row\">\n    <div class=\"col-8 card-container\">\n        <div class=\"card\">\n            <div class=\"card-header\">\n            </div>\n            <div class=\"card-body\">\n                <div class=\"px-3\">\n                    <form class=\"form form-horizontal striped-rows form-bordered\">\n                        <div class=\"form-body\">\n                            <h5 class=\"card-title\"> Personal Information</h5>\n                                        <div class=\"row\">\n                                            <div class=\"col-md-6\">\n                                                <div class=\"form-group\">\n                                                    <label for=\"Name\">Name</label>\n                                                    <input type=\"text\"\n                                                        class=\"form-control\"\n                                                        id=\"Name\"\n                                                        name=\"Name\"\n                                                        [value]=\"data.read.Identity.Name\"\n                                                        [ngClass]=\"{'red-font': data.read.Identity.NameConfidence < 0.9}\"\n                                                        (click)=\"highlightField(data.read.Identity.NameCoordinates, data.read.Identity.PageNumber)\"\n                                                        [disabled]=\"item.status==='Done'\"\n                                                        >\n                                                </div>\n                                            </div>\n                                            <div class=\"col-md-6\">\n                                                <div class=\"form-group\">\n                                                    <label for=\"AccountNumber\">Account Number</label>\n                                                    <input type=\"text\"\n                                                        class=\"form-control\"\n                                                        id=\"AccountNumber\"\n                                                        name=\"AccountNumber\"\n                                                        [value]=\"data.read.Identity.AccountNumber\"\n                                                        [ngClass]=\"{'red-font': data.read.Identity.AccountNumberConfidence < 0.9}\"\n                                                        (click)=\"highlightField(data.read.Identity.AccountNumberCoordinates, data.read.Identity.PageNumber)\"\n                                                        [disabled]=\"item.status==='Done'\"\n                                                        >\n                                                </div>\n                                            </div>\n                                        </div>\n                                        <div class=\"row\">\n                                            <div class=\"col-md-6\">\n                                                <div class=\"form-group\">\n                                                    <label for=\"BankOffice\">Bank Office</label>\n                                                    <input type=\"text\"\n                                                        class=\"form-control\"\n                                                        id=\"BankOffice\"\n                                                        name=\"BankOffice\"\n                                                        [value]=\"data.read.Identity.BankOffice\"\n                                                        [ngClass]=\"{'red-font': data.read.Identity.BankOfficerConfidence < 0.9}\"\n                                                        (click)=\"highlightField(data.read.Identity.BankOfficeCoordinates, data.read.Identity.PageNumber)\"\n                                                        [disabled]=\"item.status==='Done'\"\n                                                        >\n                                                </div>\n                                            </div>\n                                            <div class=\"col-md-6\">\n                                                <div class=\"form-group\">\n                                                    <label for=\"Product\">Product</label>\n                                                    <input type=\"text\"\n                                                        class=\"form-control\"\n                                                        id=\"Product\"\n                                                        name=\"Product\"\n                                                        [value]=\"data.read.Identity.Product\"\n                                                        [ngClass]=\"{'red-font': data.read.Identity.ProductConfidence < 0.9}\"\n                                                        (click)=\"highlightField(data.read.Identity.ProductCoordinates, data.read.Identity.PageNumber)\"\n                                                        [disabled]=\"item.status==='Done'\"\n                                                        >\n                                                </div>\n                                            </div>\n                                        </div>\n                                        <div class=\"row\">\n                                            <div class=\"col-md-6\">\n                                                <div class=\"form-group\">\n                                                    <label for=\"Currency\">Currency</label>\n                                                    <input type=\"text\"\n                                                        class=\"form-control\"\n                                                        id=\"Currency\"\n                                                        name=\"Currency\"\n                                                        [value]=\"data.read.Identity.Currency\"\n                                                        [ngClass]=\"{'red-font': data.read.Identity.CurrencyConfidence < 0.9}\"\n                                                        (click)=\"highlightField(data.read.Identity.CurrencyCoordinates, data.read.Identity.PageNumber)\"\n                                                        [disabled]=\"item.status==='Done'\"\n                                                        >\n                                                </div>\n                                            </div>\n                                            <div class=\"col-md-6\">\n                                                <div class=\"form-group\">\n                                                    <label for=\"Address\">Address</label>\n                                                    <textarea rows=\"5\"\n                                                        class=\"form-control\"\n                                                        id=\"Address\"\n                                                        name=\"Address\"\n                                                        [value]=\"data.read.Identity.Address\"\n                                                        [ngClass]=\"{'red-font': data.read.Identity.AddressConfidence < 0.9}\"\n                                                        (click)=\"highlightField(data.read.Identity.AddressCoordinates, data.read.Identity.PageNumber)\"\n                                                        [disabled]=\"item.status==='Done'\"\n                                                        >\n                                                    </textarea>\n                                                </div>\n                                            </div>\n                                        </div>\n                                        <section id=\"simple\">\n                                            \n                                            <div class=\"row text-left\">\n                                                <div class=\"col-sm-12\">\n                                                    <div class=\"card\">\n                                                        <div class=\"card-header\">\n                                                            <h5 class=\"card-title\">Transaction History</h5>\n                                                        </div>\n                                                        <div class=\"card-body\">\n                                                            <div class=\"card-block\">\n                                                                <ng2-smart-table [settings]=\"settings\" [source]=\"source\" (userRowSelect)=\"onRowSelect($event)\"\n                                                                    (deleteConfirm)=\"onDeleteConfirm($event)\" (editConfirm)=\"onSaveConfirm($event)\" (createConfirm)=\"onCreateConfirm($event)\">\n                                                                </ng2-smart-table>\n                                                            </div>\n                                                        </div>\n                                                    </div>\n                                                </div>\n                                            </div>\n                                        </section>\n                        </div>\n                        <div class=\"form-actions right\">\n                            <button type=\"button\" class=\"btn btn-raised btn-warning mr-1\" (click)=\"onBackClick()\"> \n                                   <i class=\"ft-x\"></i> Back\n                            </button>\n                            <button *ngIf=\"item.status !== 'Done'\" type=\"button\" class=\"btn btn-raised btn-info mr-1\" (click)=\"onSaveClick()\">\n                                   <i class=\"ft-save\"></i> Save & Back\n                            </button>\n                            <button *ngIf=\"item.status !== 'Done'\" type=\"button\" class=\"btn btn-raised btn-primary\" (click)=\"onSubmitClick()\">\n                                   <i class=\"fa fa-check-square-o\"></i> Submit\n                            </button>\n                            \n                     </div>\n                    </form>\n                </div>\n            </div>\n        </div>\n    </div>\n    <div #viewer class=\"viewer col-4\"></div>\n</div>\n"
+module.exports = "<div *ngIf=\"data\" class=\"row\">\r\n    <div class=\"col-8 card-container\">\r\n        <div class=\"card\">\r\n            <div class=\"card-header\">\r\n            </div>\r\n            <div class=\"card-body\">\r\n                <div class=\"px-3\">\r\n                    <form class=\"form form-horizontal striped-rows form-bordered\">\r\n                        <div class=\"form-body\">\r\n                            <h5 class=\"card-title\"> Personal Information</h5>\r\n                                        <div class=\"row\">\r\n                                            <div class=\"col-md-6\">\r\n                                                <div class=\"form-group\">\r\n                                                    <label for=\"Name\">Name</label>\r\n                                                    <input type=\"text\"\r\n                                                        class=\"form-control\"\r\n                                                        id=\"Name\"\r\n                                                        name=\"Name\"\r\n                                                        [value]=\"data.read.Identity.name\"\r\n                                                        [ngClass]=\"{'red-font': data.read.Identity.name_confidence < 0.9}\"\r\n                                                        (click)=\"highlightField(data.read.Identity.name_coordinate, data.read.Identity.page_number)\"\r\n                                                        [disabled]=\"item.status==='Done'\"\r\n                                                        >\r\n                                                </div>\r\n                                            </div>\r\n                                            <div class=\"col-md-6\">\r\n                                                <div class=\"form-group\">\r\n                                                    <label for=\"AccountNumber\">Account Number</label>\r\n                                                    <input type=\"text\"\r\n                                                        class=\"form-control\"\r\n                                                        id=\"AccountNumber\"\r\n                                                        name=\"AccountNumber\"\r\n                                                        [value]=\"data.read.Identity.account_number\"\r\n                                                        [ngClass]=\"{'red-font': data.read.Identity.account_number_confidence < 0.9}\"\r\n                                                        (click)=\"highlightField(data.read.Identity.account_number_coordinate, data.read.Identity.page_number)\"\r\n                                                        [disabled]=\"item.status==='Done'\"\r\n                                                        >\r\n                                                </div>\r\n                                            </div>\r\n                                        </div>\r\n                                        <div class=\"row\">\r\n                                            <div class=\"col-md-6\">\r\n                                                <div class=\"form-group\">\r\n                                                    <label for=\"BankOffice\">Bank Office</label>\r\n                                                    <input type=\"text\"\r\n                                                        class=\"form-control\"\r\n                                                        id=\"BankOffice\"\r\n                                                        name=\"BankOffice\"\r\n                                                        [value]=\"data.read.Identity.bank_office\"\r\n                                                        [ngClass]=\"{'red-font': data.read.Identity.bank_office_confidence < 0.9}\"\r\n                                                        (click)=\"highlightField(data.read.Identity.bank_office_coordinate, data.read.Identity.page_number)\"\r\n                                                        [disabled]=\"item.status==='Done'\"\r\n                                                        >\r\n                                                </div>\r\n                                            </div>\r\n                                            <div class=\"col-md-6\">\r\n                                                <div class=\"form-group\">\r\n                                                    <label for=\"Currency\">Currency</label>\r\n                                                    <input type=\"text\"\r\n                                                        class=\"form-control\"\r\n                                                        id=\"Currency\"\r\n                                                        name=\"Currency\"\r\n                                                        [value]=\"data.read.Identity.currency\"\r\n                                                        [ngClass]=\"{'red-font': data.read.Identity.currency_confidence < 0.9}\"\r\n                                                        (click)=\"highlightField(data.read.Identity.currency_coordinate, data.read.Identity.page_number)\"\r\n                                                        [disabled]=\"item.status==='Done'\"\r\n                                                        >\r\n                                                </div>\r\n                                            </div>\r\n                                        </div>\r\n                                        <div class=\"row\">\r\n                                            <div class=\"col-md-12\">\r\n                                                <div class=\"form-group\">\r\n                                                    <label for=\"Address\">Address</label>\r\n                                                    <textarea rows=\"5\"\r\n                                                        class=\"form-control\"\r\n                                                        id=\"Address\"\r\n                                                        name=\"Address\"\r\n                                                        [value]=\"data.read.Identity.address\"\r\n                                                        [ngClass]=\"{'red-font': data.read.Identity.address_confidence < 0.9}\"\r\n                                                        (click)=\"highlightField(data.read.Identity.address_coordinate, data.read.Identity.page_number)\"\r\n                                                        [disabled]=\"item.status==='Done'\"\r\n                                                        >\r\n                                                    </textarea>\r\n                                                </div>\r\n                                            </div>\r\n                                        </div>\r\n                                        <section id=\"simple\">\r\n                                            \r\n                                            <div class=\"row text-left\">\r\n                                                <div class=\"col-sm-12\">\r\n                                                    <div class=\"card\">\r\n                                                        <div class=\"card-header\">\r\n                                                            <h5 class=\"card-title\">Transaction History</h5>\r\n                                                        </div>\r\n                                                        <div class=\"card-body\">\r\n                                                            <div class=\"card-block\">\r\n                                                                <ng2-smart-table [settings]=\"settings\" [source]=\"source\" (userRowSelect)=\"onRowSelect($event)\"\r\n                                                                    (deleteConfirm)=\"onDeleteConfirm($event)\" (editConfirm)=\"onSaveConfirm($event)\" (createConfirm)=\"onCreateConfirm($event)\">\r\n                                                                </ng2-smart-table>\r\n                                                            </div>\r\n                                                        </div>\r\n                                                    </div>\r\n                                                </div>\r\n                                            </div>\r\n                                        </section>\r\n                        </div>\r\n                        <div class=\"form-actions right\">\r\n                            <button type=\"button\" class=\"btn btn-raised btn-warning mr-1\" (click)=\"onBackClick()\"> \r\n                                   <i class=\"ft-x\"></i> Back\r\n                            </button>\r\n                            <button *ngIf=\"item.status !== 'Done'\" type=\"button\" class=\"btn btn-raised btn-info mr-1\" (click)=\"onSaveClick()\">\r\n                                   <i class=\"ft-save\"></i> Save & Back\r\n                            </button>\r\n                            <button *ngIf=\"item.status !== 'Done'\" type=\"button\" class=\"btn btn-raised btn-primary\" (click)=\"onSubmitClick()\">\r\n                                   <i class=\"fa fa-check-square-o\"></i> Submit\r\n                            </button>\r\n                            \r\n                     </div>\r\n                    </form>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div #viewer class=\"viewer col-4\"></div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -81,7 +81,7 @@ module.exports = "<div *ngIf=\"data\" class=\"row\">\n    <div class=\"col-8 car
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".card-container, .viewer {\n  width: 100%;\n  height: 70vh;\n  overflow-y: auto; }\n\n.red-font {\n  color: red; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcGRmLXZpZXctZGV0YWlsL0Q6XFxCU0ErIEhJVExcXFRlbXBsYXRlIEJTQVxcYWRwL3NyY1xcYXBwXFxwZGYtdmlldy1kZXRhaWxcXHBkZi12aWV3LWRldGFpbC5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFRQTtFQUNJLFlBQVc7RUFDWCxhQUFZO0VBQ1osaUJBQWdCLEVBQ25COztBQUVEO0VBQ0ksV0FBVSxFQUNiIiwiZmlsZSI6InNyYy9hcHAvcGRmLXZpZXctZGV0YWlsL3BkZi12aWV3LWRldGFpbC5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIlxyXG4gIC8vIC5mb3JtLWFyZWEge1xyXG4gIC8vICAgd2lkdGg6IDMwJTtcclxuICAvLyAgIHBhZGRpbmc6IDIwcHg7XHJcbiAgLy8gICBvdmVyZmxvdy15OiBhdXRvOyAvKiBGb3Igc2Nyb2xsaW5nICovXHJcbiAgLy8gfVxyXG5cclxuXHJcbi5jYXJkLWNvbnRhaW5lciwgLnZpZXdlciB7XHJcbiAgICB3aWR0aDogMTAwJTsgLy8gTWFrZSB0aGUgY2FyZCBhbmQgdmlld2VyIGVhY2ggdGFrZSA1MCUgd2lkdGhcclxuICAgIGhlaWdodDogNzB2aDsgLy8gTWFrZSB0aGVtIHRha2UgZnVsbCBoZWlnaHQgb2YgdGhlIGNvbnRhaW5lclxyXG4gICAgb3ZlcmZsb3cteTogYXV0bzsgLy8gQWRkIHZlcnRpY2FsIHNjcm9sbGluZyBpZiBjb250ZW50IG92ZXJmbG93c1xyXG59XHJcblxyXG4ucmVkLWZvbnQge1xyXG4gICAgY29sb3I6IHJlZDtcclxufVxyXG5cclxuICAiXX0= */"
+module.exports = ".card-container, .viewer {\n  width: 100%;\n  height: 70vh;\n  overflow-y: auto; }\n\n.red-font {\n  color: red; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcGRmLXZpZXctZGV0YWlsL0Q6XFxCU0ErIEhJVExcXEJTQSBnaXRodWJcXGFkcC9zcmNcXGFwcFxccGRmLXZpZXctZGV0YWlsXFxwZGYtdmlldy1kZXRhaWwuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBUUE7RUFDSSxZQUFXO0VBQ1gsYUFBWTtFQUNaLGlCQUFnQixFQUNuQjs7QUFFRDtFQUNJLFdBQVUsRUFDYiIsImZpbGUiOiJzcmMvYXBwL3BkZi12aWV3LWRldGFpbC9wZGYtdmlldy1kZXRhaWwuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJcclxuICAvLyAuZm9ybS1hcmVhIHtcclxuICAvLyAgIHdpZHRoOiAzMCU7XHJcbiAgLy8gICBwYWRkaW5nOiAyMHB4O1xyXG4gIC8vICAgb3ZlcmZsb3cteTogYXV0bzsgLyogRm9yIHNjcm9sbGluZyAqL1xyXG4gIC8vIH1cclxuXHJcblxyXG4uY2FyZC1jb250YWluZXIsIC52aWV3ZXIge1xyXG4gICAgd2lkdGg6IDEwMCU7IC8vIE1ha2UgdGhlIGNhcmQgYW5kIHZpZXdlciBlYWNoIHRha2UgNTAlIHdpZHRoXHJcbiAgICBoZWlnaHQ6IDcwdmg7IC8vIE1ha2UgdGhlbSB0YWtlIGZ1bGwgaGVpZ2h0IG9mIHRoZSBjb250YWluZXJcclxuICAgIG92ZXJmbG93LXk6IGF1dG87IC8vIEFkZCB2ZXJ0aWNhbCBzY3JvbGxpbmcgaWYgY29udGVudCBvdmVyZmxvd3NcclxufVxyXG5cclxuLnJlZC1mb250IHtcclxuICAgIGNvbG9yOiByZWQ7XHJcbn1cclxuXHJcbiAgIl19 */"
 
 /***/ }),
 
@@ -133,51 +133,51 @@ var PdfViewDetailComponent = /** @class */ (function () {
         this.hasClickedInput = false;
         this.settings = {
             columns: {
-                Date: {
+                date: {
                     title: 'Date',
                     type: 'text',
                     filter: false,
                     valuePrepareFunction: function (cell, row) {
-                        if (row.DateConfidence < 0.9) {
+                        if (row.date_confidence < 90) {
                             return cell + " (WARNING!!!)";
                         }
                         return cell;
                     },
                 },
-                Description: {
+                description: {
                     title: 'Description',
                     type: 'text',
                     filter: false,
                     valuePrepareFunction: function (cell, row) {
-                        if (row.DescriptionConfidence < 0.9) {
+                        if (row.description_confidence < 90) {
                             return cell + " (WARNING!!!)";
                         }
                         return cell;
                     },
                 },
-                Amount: {
+                amount: {
                     title: 'Amount',
                     type: 'text',
                     filter: false,
                     valuePrepareFunction: function (cell, row) {
-                        if (row.AmountConfidence < 0.9) {
+                        if (row.amount_confidence < 90) {
                             return cell + " (WARNING!!!)";
                         }
                         return cell;
                     },
                 },
-                EndingBalance: {
+                ending_balance: {
                     title: 'Ending Balance',
                     type: 'text',
                     filter: false,
                     valuePrepareFunction: function (cell, row) {
-                        if (row.EndingBalanceConfidence < 0.9) {
+                        if (row.ending_balance_confidence < 90) {
                             return cell + " (WARNING!!!)";
                         }
                         return cell;
                     },
                 },
-                Type: { title: 'Type' }
+                type: { title: 'Type' }
             },
             actions: {
                 add: true,
@@ -231,8 +231,8 @@ var PdfViewDetailComponent = /** @class */ (function () {
                 _this.data = response1;
                 console.log('Data loaded:', _this.data); // Check what data looks like when loaded
                 _this.data.read.TransactionHistory.sort(function (a, b) {
-                    var dateA = new Date(a.Date);
-                    var dateB = new Date(b.Date);
+                    var dateA = new Date(a.date);
+                    var dateB = new Date(b.date);
                     return dateA.getTime() - dateB.getTime(); // Ascending order
                 });
                 _this.isDataLoaded = true;
@@ -249,19 +249,19 @@ var PdfViewDetailComponent = /** @class */ (function () {
     PdfViewDetailComponent.prototype.highlightField = function (coordinates, page) {
         var _a = this.wvInstance.Core, documentViewer = _a.documentViewer, Annotations = _a.Annotations, annotationManager = _a.annotationManager;
         // Clear existing annotations if necessary
+        console.log(coordinates);
         annotationManager.deleteAnnotations(annotationManager.getAnnotationsList());
         var rectangleAnnot = new Annotations.RectangleAnnotation({
             PageNumber: page,
-            X: this.convertGoogleVisionToPDFTron(coordinates['x1']) - this.dpi / 30,
-            Y: this.convertGoogleVisionToPDFTron(coordinates['y1']) - this.dpi / 30,
-            Width: (this.convertGoogleVisionToPDFTron(coordinates['x3'])) - (this.convertGoogleVisionToPDFTron(coordinates['x1'])) + this.dpi / 15,
-            Height: (this.convertGoogleVisionToPDFTron(coordinates['y3'])) - (this.convertGoogleVisionToPDFTron(coordinates['y1'])) + this.dpi / 15,
+            X: this.convertGoogleVisionToPDFTron(coordinates['x']) - this.dpi / 30,
+            Y: this.convertGoogleVisionToPDFTron(coordinates['y']) - this.dpi / 30,
+            Width: (this.convertGoogleVisionToPDFTron(coordinates['w'])) + this.dpi / 15,
+            Height: (this.convertGoogleVisionToPDFTron(coordinates['h'])) + this.dpi / 15,
             Author: annotationManager.getCurrentUser(),
             FillColor: new Annotations.Color(0, 155, 0, 0.2),
             StrokeColor: new Annotations.Color(255, 0, 0),
             StrokeThickness: 2
         });
-        console.log('coor pross:', this.convertGoogleVisionToPDFTron(coordinates['x1']), this.convertGoogleVisionToPDFTron(coordinates['y1']), (this.convertGoogleVisionToPDFTron(coordinates['x3'])) - (this.convertGoogleVisionToPDFTron(coordinates['x1'])) + this.dpi / 12, (this.convertGoogleVisionToPDFTron(coordinates['y3'])) - (this.convertGoogleVisionToPDFTron(coordinates['y1'])) + this.dpi / 12);
         annotationManager.addAnnotation(rectangleAnnot);
         annotationManager.redrawAnnotation(rectangleAnnot);
         documentViewer.setCurrentPage(page, true); // Adjust scrolling if necessary
@@ -334,26 +334,30 @@ var PdfViewDetailComponent = /** @class */ (function () {
     PdfViewDetailComponent.prototype.onRowSelect = function (event) {
         var selectedRow = event.data;
         var coordinatesArray = [
-            selectedRow.DateCoordinates,
-            selectedRow.AmountCoordinate,
-            selectedRow.DescriptionCoordinates,
-            selectedRow.EndingBalanceCoordinates
+            selectedRow.date_coordinate,
+            selectedRow.amount_coordinate,
+            selectedRow.description_coordinate,
+            selectedRow.ending_balance_coordinate
         ];
         console.log('coordinatesArray row:', coordinatesArray);
-        var minX1 = Math.min.apply(Math, coordinatesArray.map(function (coordinates) { return coordinates.x1; }));
-        var maxX3 = Math.max.apply(Math, coordinatesArray.map(function (coordinates) { return coordinates.x3; }));
-        var minY1 = Math.min.apply(Math, coordinatesArray.map(function (coordinates) { return coordinates.y1; }));
-        var maxY3 = Math.max.apply(Math, coordinatesArray.map(function (coordinates) { return coordinates.y3; }));
+        var minx = Math.min.apply(Math, coordinatesArray.map(function (coordinates) { return coordinates.x; }));
+        var miny = Math.min.apply(Math, coordinatesArray.map(function (coordinates) { return coordinates.y; }));
+        var maxX = Math.max.apply(Math, coordinatesArray.map(function (coordinates) { return coordinates.x; }));
+        var maxXIndex = coordinatesArray
+            .map(function (coordinates) { return coordinates.x; })
+            .reduce(function (maxIndex, currentValue, currentIndex, array) { return currentValue > array[maxIndex] ? currentIndex : maxIndex; }, 0);
+        var sum_w = (coordinatesArray[maxXIndex].w + maxX) - minx;
+        var max_h = Math.max.apply(Math, coordinatesArray.map(function (coordinates) { return coordinates.h; }));
         console.log('Selected row:', selectedRow);
         // Assuming the selected row contains coordinates and page number
         var coor = {
-            x1: minX1,
-            x3: maxX3,
-            y1: minY1,
-            y3: maxY3,
+            x: minx,
+            y: miny,
+            w: sum_w,
+            h: max_h,
         };
         console.log('coor:', coor);
-        this.highlightField(coor, selectedRow.PageNumber);
+        this.highlightField(coor, selectedRow.page_number);
     };
     PdfViewDetailComponent.prototype.onDeleteConfirm = function (event) {
         if (window.confirm('Are you sure you want to delete?')) {
@@ -391,12 +395,11 @@ var PdfViewDetailComponent = /** @class */ (function () {
         var updatedData = {
             read: {
                 Identity: {
-                    Name: document.getElementById('Name').value,
-                    AccountNumber: document.getElementById('AccountNumber').value,
-                    BankOffice: document.getElementById('BankOffice').value,
-                    Product: document.getElementById('Product').value,
-                    Currency: document.getElementById('Currency').value,
-                    Address: document.getElementById('Address').value,
+                    name: document.getElementById('Name').value,
+                    account_number: document.getElementById('AccountNumber').value,
+                    bank_office: document.getElementById('BankOffice').value,
+                    currency: document.getElementById('Currency').value,
+                    address: document.getElementById('Address').value,
                 },
                 TransactionHistory: this.source.getAll()
             }
@@ -418,12 +421,11 @@ var PdfViewDetailComponent = /** @class */ (function () {
         var updatedData = {
             read: {
                 Identity: {
-                    Name: document.getElementById('Name').value,
-                    AccountNumber: document.getElementById('AccountNumber').value,
-                    BankOffice: document.getElementById('BankOffice').value,
-                    Product: document.getElementById('Product').value,
-                    Currency: document.getElementById('Currency').value,
-                    Address: document.getElementById('Address').value,
+                    name: document.getElementById('Name').value,
+                    account_number: document.getElementById('AccountNumber').value,
+                    bank_office: document.getElementById('BankOffice').value,
+                    currency: document.getElementById('Currency').value,
+                    address: document.getElementById('Address').value,
                 },
                 TransactionHistory: this.source.getAll()
             }

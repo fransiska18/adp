@@ -16,9 +16,9 @@
                                                         class="form-control"
                                                         id="Name"
                                                         name="Name"
-                                                        [value]="data.read.Identity.Name"
-                                                        [ngClass]="{'red-font': data.read.Identity.NameConfidence < 0.9}"
-                                                        (click)="highlightField(data.read.Identity.NameCoordinates, data.read.Identity.PageNumber)"
+                                                        [value]="data.read.Identity.name"
+                                                        [ngClass]="{'red-font': data.read.Identity.name_confidence < 0.9}"
+                                                        (click)="highlightField(data.read.Identity.name_coordinate, data.read.Identity.page_number)"
                                                         [disabled]="item.status==='Done'"
                                                         >
                                                 </div>
@@ -30,9 +30,9 @@
                                                         class="form-control"
                                                         id="AccountNumber"
                                                         name="AccountNumber"
-                                                        [value]="data.read.Identity.AccountNumber"
-                                                        [ngClass]="{'red-font': data.read.Identity.AccountNumberConfidence < 0.9}"
-                                                        (click)="highlightField(data.read.Identity.AccountNumberCoordinates, data.read.Identity.PageNumber)"
+                                                        [value]="data.read.Identity.account_number"
+                                                        [ngClass]="{'red-font': data.read.Identity.account_number_confidence < 0.9}"
+                                                        (click)="highlightField(data.read.Identity.account_number_coordinate, data.read.Identity.page_number)"
                                                         [disabled]="item.status==='Done'"
                                                         >
                                                 </div>
@@ -46,29 +46,13 @@
                                                         class="form-control"
                                                         id="BankOffice"
                                                         name="BankOffice"
-                                                        [value]="data.read.Identity.BankOffice"
-                                                        [ngClass]="{'red-font': data.read.Identity.BankOfficerConfidence < 0.9}"
-                                                        (click)="highlightField(data.read.Identity.BankOfficeCoordinates, data.read.Identity.PageNumber)"
+                                                        [value]="data.read.Identity.bank_office"
+                                                        [ngClass]="{'red-font': data.read.Identity.bank_office_confidence < 0.9}"
+                                                        (click)="highlightField(data.read.Identity.bank_office_coordinate, data.read.Identity.page_number)"
                                                         [disabled]="item.status==='Done'"
                                                         >
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <label for="Product">Product</label>
-                                                    <input type="text"
-                                                        class="form-control"
-                                                        id="Product"
-                                                        name="Product"
-                                                        [value]="data.read.Identity.Product"
-                                                        [ngClass]="{'red-font': data.read.Identity.ProductConfidence < 0.9}"
-                                                        (click)="highlightField(data.read.Identity.ProductCoordinates, data.read.Identity.PageNumber)"
-                                                        [disabled]="item.status==='Done'"
-                                                        >
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                     <label for="Currency">Currency</label>
@@ -76,23 +60,25 @@
                                                         class="form-control"
                                                         id="Currency"
                                                         name="Currency"
-                                                        [value]="data.read.Identity.Currency"
-                                                        [ngClass]="{'red-font': data.read.Identity.CurrencyConfidence < 0.9}"
-                                                        (click)="highlightField(data.read.Identity.CurrencyCoordinates, data.read.Identity.PageNumber)"
+                                                        [value]="data.read.Identity.currency"
+                                                        [ngClass]="{'red-font': data.read.Identity.currency_confidence < 0.9}"
+                                                        (click)="highlightField(data.read.Identity.currency_coordinate, data.read.Identity.page_number)"
                                                         [disabled]="item.status==='Done'"
                                                         >
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
                                                 <div class="form-group">
                                                     <label for="Address">Address</label>
                                                     <textarea rows="5"
                                                         class="form-control"
                                                         id="Address"
                                                         name="Address"
-                                                        [value]="data.read.Identity.Address"
-                                                        [ngClass]="{'red-font': data.read.Identity.AddressConfidence < 0.9}"
-                                                        (click)="highlightField(data.read.Identity.AddressCoordinates, data.read.Identity.PageNumber)"
+                                                        [value]="data.read.Identity.address"
+                                                        [ngClass]="{'red-font': data.read.Identity.address_confidence < 0.9}"
+                                                        (click)="highlightField(data.read.Identity.address_coordinate, data.read.Identity.page_number)"
                                                         [disabled]="item.status==='Done'"
                                                         >
                                                     </textarea>

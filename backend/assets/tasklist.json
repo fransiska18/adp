@@ -22,5 +22,53 @@
     "status": "Ready To Check",
     "file_json": "json_rekorBRI3_rev2.json",
     "file_pdf": "../assets/Rekor BRI 3 - foto.pdf"
+  },
+  {
+    "id": 4,
+    "bank": "BRI",
+    "pagenum": 4,
+    "status": "Ready To Check",
+    "file_json": "lima belass.json",
+    "file_pdf": "../assets/lima belass.pdf"
+  },
+  {
+    "id": 5,
+    "bank": "BRI",
+    "pagenum": 4,
+    "status": "Ready To Check",
+    "file_json": "scribd-NEW-REKENING-KORAN-ONLINE-1.json",
+    "file_pdf": "../assets/scribd-NEW-REKENING-KORAN-ONLINE-1.pdf"
+  },
+  {
+    "id": 6,
+    "bank": "BRI",
+    "pagenum": 5,
+    "status": "Ready To Check",
+    "file_json": "scribd-NEW-REKENING-KORAN-ONLINE-2.json",
+    "file_pdf": "../assets/scribd-NEW-REKENING-KORAN-ONLINE-2.pdf"
+  },
+  {
+    "id": 7,
+    "bank": "BRI",
+    "pagenum": 5,
+    "status": "Ready To Check",
+    "file_json": "sebelas.json",
+    "file_pdf": "../assets/sebelas.pdf"
+  },
+  {
+    "id": 8,
+    "bank": "BRI",
+    "pagenum": 5,
+    "status": "Ready To Check",
+    "file_json": "sepuluh.json",
+    "file_pdf": "../assets/sepuluh.pdf"
+  },
+  {
+    "id": 9,
+    "bank": "BRI",
+    "pagenum": 3,
+    "status": "Ready To Check",
+    "file_json": "tiga.json",
+    "file_pdf": "../assets/tiga.pdf"
   }
 ]

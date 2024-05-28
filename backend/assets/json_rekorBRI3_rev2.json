@@ -1,1360 +1,1082 @@
 {
-    "read": {
-        "Identity": {
-            "PageNumber": 1,
-            "AccountNumber": "052601013193505",
-            "AccountNumberConfidence": 0.9901100053333333,
-            "AccountNumberCoordinates": {
-                "x1": 305,
-                "y1": 576,
-                "x2": 479,
-                "y2": 577,
-                "x3": 479,
-                "y3": 593,
-                "x4": 305,
-                "y4": 592
-            },
-            "BankOffice": ": KCP Glodok",
-            "BankOfficeConfidence": 0.9258602483333334,
-            "BankOfficeCoordinates": {
-                "x1": 1000,
-                "y1": 579,
-                "x2": 1134,
-                "y2": 579,
-                "x3": 1134,
-                "y3": 598,
-                "x4": 1000,
-                "y4": 598
-            },
-            "Name": "CHRIS MORGAN SHINTARO",
-            "NameConfidence": 0.9909812094736843,
-            "NameCoordinates": {
-                "x1": 129,
-                "y1": 380,
-                "x2": 449,
-                "y2": 381,
-                "x3": 449,
-                "y3": 403,
-                "x4": 129,
-                "y4": 401
-            },
-            "Product": "BritAma X SME",
-            "ProductConfidence": 0.9769775218181818,
-            "ProductCoordinates": {
-                "x1": 306,
-                "y1": 644,
-                "x2": 449,
-                "y2": 644,
-                "x3": 449,
-                "y3": 658,
-                "x4": 306,
-                "y4": 658
-            },
-            "Address": " JL SUMATERA LAUT NO 36 E , Rt.015 / 004 , BAGANSIAPIAPI KOT . BANGKO BAGANSIAPIAPI KOT .",
-            "AddressConfidence": 0.931355803142857,
-            "AddressCoordinates": {
-                "x1": 128,
-                "y1": 449,
-                "x2": 587,
-                "y2": 449,
-                "x3": 587,
-                "y3": 523,
-                "x4": 128,
-                "y4": 523
-            },
-            "Currency": "IDR",
-            "CurrencyConfidence": 0.9920377766666667,
-            "CurrencyCoordinates": {
-                "x1": 307,
-                "y1": 711,
-                "x2": 360,
-                "y2": 711,
-                "x3": 360,
-                "y3": 724,
-                "x4": 307,
-                "y4": 724
-            },
-            "DebitTransactionsLast3Months": 2232500.0,
-            "CreditTransactionsLast3Months": 2725000.0,
-            "EndingBalance": 0.9882839831460676,
-            "TotalTransactionsCreditLast3Months": 12,
-            "TotalTransactionsDebitLast3Months": 12,
-            "TotalTransactionsLast3Months": 24,
-            "WarningMutasi1": false,
-            "WarningMutasi1Description": "",
-            "AlternateIncome1": 0,
-            "AlternateIncome2": 0,
-            "AlternateIncome3": 2725000.0,
-            "AlternateIncome4": 899250.0,
-            "AlternateIncomeFinal": 899250.0
-        },
-        "TransactionHistory": [
-            {
-                "PageNumber": 1.0,
-                "Amount": 100000.0,
-                "AmountConfidence": 0.9914072700000002,
-                "AmountCoordinate": {
-                    "x1": 1192,
-                    "y1": 878,
-                    "x2": 1276,
-                    "y2": 878,
-                    "x3": 1276,
-                    "y3": 892,
-                    "x4": 1192,
-                    "y4": 892
-                },
-                "Date": "2023-07-14",
-                "DateConfidence": 0.98813151375,
-                "DateCoordinates": {
-                    "x1": 126,
-                    "y1": 875,
-                    "x2": 270,
-                    "y2": 875,
-                    "x3": 270,
-                    "y3": 891,
-                    "x4": 126,
-                    "y4": 891
-                },
-                "Description": "TRF 052601013193505 111441007674866",
-                "DescriptionConfidence": 0.9905326133333333,
-                "DescriptionCoordinates": {
-                    "x1": 294,
-                    "y1": 876,
-                    "x2": 618,
-                    "y2": 876,
-                    "x3": 618,
-                    "y3": 895,
-                    "x4": 294,
-                    "y4": 893
-                },
-                "EndingBalance": 100000.0,
-                "EndingBalanceConfidence": 0.989385313,
-                "EndingBalanceCoordinates": {
-                    "x1": 1419,
-                    "y1": 877,
-                    "x2": 1505,
-                    "y2": 878,
-                    "x3": 1505,
-                    "y3": 893,
-                    "x4": 1419,
-                    "y4": 892
-                },
-                "Type": "CREDIT"
-            },
-            {
-                "PageNumber": 1.0,
-                "Amount": 400000.0,
-                "AmountConfidence": 0.9909851810000001,
-                "AmountCoordinate": {
-                    "x1": 1191,
-                    "y1": 927,
-                    "x2": 1277,
-                    "y2": 927,
-                    "x3": 1277,
-                    "y3": 942,
-                    "x4": 1191,
-                    "y4": 942
-                },
-                "Date": "2023-07-14",
-                "DateConfidence": 0.98950868125,
-                "DateCoordinates": {
-                    "x1": 126,
-                    "y1": 926,
-                    "x2": 272,
-                    "y2": 926,
-                    "x3": 272,
-                    "y3": 941,
-                    "x4": 126,
-                    "y4": 941
-                },
-                "Description": ". ; ESB : INDS : 0002800D : 7881eedf8e34",
-                "DescriptionConfidence": 0.7032934528571428,
-                "DescriptionCoordinates": {
-                    "x1": 294,
-                    "y1": 927,
-                    "x2": 585,
-                    "y2": 927,
-                    "x3": 585,
-                    "y3": 945,
-                    "x4": 294,
-                    "y4": 944
-                },
-                "EndingBalance": 500000.0,
-                "EndingBalanceConfidence": 0.99021432,
-                "EndingBalanceCoordinates": {
-                    "x1": 1418,
-                    "y1": 928,
-                    "x2": 1505,
-                    "y2": 928,
-                    "x3": 1505,
-                    "y3": 942,
-                    "x4": 1418,
-                    "y4": 942
-                },
-                "Type": "CREDIT"
-            },
-            {
-                "PageNumber": 1.0,
-                "Amount": 500.0,
-                "AmountConfidence": 0.9882687085714286,
-                "AmountCoordinate": {
-                    "x1": 1004,
-                    "y1": 977,
-                    "x2": 1055,
-                    "y2": 976,
-                    "x3": 1055,
-                    "y3": 991,
-                    "x4": 1004,
-                    "y4": 992
-                },
-                "Date": "2023-07-17",
-                "DateConfidence": 0.9883633843749999,
-                "DateCoordinates": {
-                    "x1": 127,
-                    "y1": 974,
-                    "x2": 271,
-                    "y2": 974,
-                    "x3": 271,
-                    "y3": 989,
-                    "x4": 127,
-                    "y4": 989
-                },
-                "Description": "082390932700 | 1SMS | 14 / 07 / 2023-14 / 07 / 2023",
-                "DescriptionConfidence": 0.7542426264000002,
-                "DescriptionCoordinates": {
-                    "x1": 295,
-                    "y1": 974,
-                    "x2": 647,
-                    "y2": 975,
-                    "x3": 647,
-                    "y3": 996,
-                    "x4": 295,
-                    "y4": 996
-                },
-                "EndingBalance": 499500.0,
-                "EndingBalanceConfidence": 0.9906774286666666,
-                "EndingBalanceCoordinates": {
-                    "x1": 1417,
-                    "y1": 977,
-                    "x2": 1505,
-                    "y2": 977,
-                    "x3": 1505,
-                    "y3": 991,
-                    "x4": 1417,
-                    "y4": 991
-                },
-                "Type": "DEBIT"
-            },
-            {
-                "PageNumber": 1.0,
-                "Amount": 1000.0,
-                "AmountConfidence": 0.9875104695454546,
-                "AmountCoordinate": {
-                    "x1": 990,
-                    "y1": 1028,
-                    "x2": 1057,
-                    "y2": 1028,
-                    "x3": 1057,
-                    "y3": 1043,
-                    "x4": 990,
-                    "y4": 1043
-                },
-                "Date": "2023-07-20",
-                "DateConfidence": 0.98898640078125,
-                "DateCoordinates": {
-                    "x1": 126,
-                    "y1": 1024,
-                    "x2": 272,
-                    "y2": 1023,
-                    "x3": 272,
-                    "y3": 1038,
-                    "x4": 126,
-                    "y4": 1039
-                },
-                "Description": "Monthly Fee ATM",
-                "DescriptionConfidence": 0.7539638256084071,
-                "DescriptionCoordinates": {
-                    "x1": 295,
-                    "y1": 1026,
-                    "x2": 427,
-                    "y2": 1026,
-                    "x3": 427,
-                    "y3": 1041,
-                    "x4": 295,
-                    "y4": 1041
-                },
-                "EndingBalance": 498500.0,
-                "EndingBalanceConfidence": 0.990458194,
-                "EndingBalanceCoordinates": {
-                    "x1": 1417,
-                    "y1": 1026,
-                    "x2": 1505,
-                    "y2": 1026,
-                    "x3": 1505,
-                    "y3": 1041,
-                    "x4": 1417,
-                    "y4": 1041
-                },
-                "Type": "DEBIT"
-            },
-            {
-                "PageNumber": 1.0,
-                "Amount": 50000.0,
-                "AmountConfidence": 0.9888112025806451,
-                "AmountCoordinate": {
-                    "x1": 981,
-                    "y1": 1077,
-                    "x2": 1057,
-                    "y2": 1076,
-                    "x3": 1057,
-                    "y3": 1090,
-                    "x4": 981,
-                    "y4": 1091
-                },
-                "Date": "2023-07-20",
-                "DateConfidence": 0.9894841997499999,
-                "DateCoordinates": {
-                    "x1": 126,
-                    "y1": 1073,
-                    "x2": 273,
-                    "y2": 1073,
-                    "x3": 273,
-                    "y3": 1088,
-                    "x4": 126,
-                    "y4": 1088
-                },
-                "Description": "NBMB CHRISMORGAN SH TO FELIX GABRIEL JON ESB : NBMB : 0001500F : 560977611050",
-                "DescriptionConfidence": 0.7538678809533899,
-                "DescriptionCoordinates": {
-                    "x1": 296,
-                    "y1": 1074,
-                    "x2": 678,
-                    "y2": 1074,
-                    "x3": 678,
-                    "y3": 1110,
-                    "x4": 296,
-                    "y4": 1110
-                },
-                "EndingBalance": 448500.0,
-                "EndingBalanceConfidence": 0.9905043404,
-                "EndingBalanceCoordinates": {
-                    "x1": 1418,
-                    "y1": 1077,
-                    "x2": 1504,
-                    "y2": 1077,
-                    "x3": 1504,
-                    "y3": 1092,
-                    "x4": 1418,
-                    "y4": 1092
-                },
-                "Type": "DEBIT"
-            },
-            {
-                "PageNumber": 1.0,
-                "Amount": 200000.0,
-                "AmountConfidence": 0.989088007317073,
-                "AmountCoordinate": {
-                    "x1": 971,
-                    "y1": 1145,
-                    "x2": 1056,
-                    "y2": 1146,
-                    "x3": 1056,
-                    "y3": 1161,
-                    "x4": 971,
-                    "y4": 1160
-                },
-                "Date": "2023-07-20",
-                "DateConfidence": 0.9897514284374999,
-                "DateCoordinates": {
-                    "x1": 125,
-                    "y1": 1143,
-                    "x2": 272,
-                    "y2": 1143,
-                    "x3": 272,
-                    "y3": 1158,
-                    "x4": 125,
-                    "y4": 1158
-                },
-                "Description": "NBMB CHRISMORGAN SH TO FELIX GABRIEL JON ESB : NBMB : 0001500F : 560978201604",
-                "DescriptionConfidence": 0.7540283217790457,
-                "DescriptionCoordinates": {
-                    "x1": 296,
-                    "y1": 1145,
-                    "x2": 677,
-                    "y2": 1145,
-                    "x3": 677,
-                    "y3": 1179,
-                    "x4": 296,
-                    "y4": 1179
-                },
-                "EndingBalance": 248500.0,
-                "EndingBalanceConfidence": 0.9903234403333333,
-                "EndingBalanceCoordinates": {
-                    "x1": 1418,
-                    "y1": 1147,
-                    "x2": 1504,
-                    "y2": 1147,
-                    "x3": 1504,
-                    "y3": 1163,
-                    "x4": 1418,
-                    "y4": 1163
-                },
-                "Type": "DEBIT"
-            },
-            {
-                "PageNumber": 1.0,
-                "Amount": 250000.0,
-                "AmountConfidence": 0.988804594347826,
-                "AmountCoordinate": {
-                    "x1": 1192,
-                    "y1": 1217,
-                    "x2": 1278,
-                    "y2": 1217,
-                    "x3": 1278,
-                    "y3": 1232,
-                    "x4": 1192,
-                    "y4": 1232
-                },
-                "Date": "2023-07-20",
-                "DateConfidence": 0.9899259766071429,
-                "DateCoordinates": {
-                    "x1": 126,
-                    "y1": 1213,
-                    "x2": 272,
-                    "y2": 1213,
-                    "x3": 272,
-                    "y3": 1228,
-                    "x4": 126,
-                    "y4": 1228
-                },
-                "Description": "NBMB FELIX GABRIEL TO CHRISMORGAN SHINT ESB : NBMB : 0001500F : 560978682644",
-                "DescriptionConfidence": 0.7876799756683168,
-                "DescriptionCoordinates": {
-                    "x1": 297,
-                    "y1": 1214,
-                    "x2": 675,
-                    "y2": 1214,
-                    "x3": 675,
-                    "y3": 1249,
-                    "x4": 297,
-                    "y4": 1249
-                },
-                "EndingBalance": 498500.0,
-                "EndingBalanceConfidence": 0.9902712952857143,
-                "EndingBalanceCoordinates": {
-                    "x1": 1416,
-                    "y1": 1219,
-                    "x2": 1506,
-                    "y2": 1219,
-                    "x3": 1506,
-                    "y3": 1233,
-                    "x4": 1416,
-                    "y4": 1233
-                },
-                "Type": "CREDIT"
-            },
-            {
-                "PageNumber": 1.0,
-                "Amount": 50000.0,
-                "AmountConfidence": 0.9889430530909091,
-                "AmountCoordinate": {
-                    "x1": 1202,
-                    "y1": 1288,
-                    "x2": 1279,
-                    "y2": 1288,
-                    "x3": 1279,
-                    "y3": 1301,
-                    "x4": 1202,
-                    "y4": 1301
-                },
-                "Date": "2023-07-20",
-                "DateConfidence": 0.989925042734375,
-                "DateCoordinates": {
-                    "x1": 126,
-                    "y1": 1283,
-                    "x2": 272,
-                    "y2": 1282,
-                    "x3": 272,
-                    "y3": 1298,
-                    "x4": 126,
-                    "y4": 1299
-                },
-                "Description": "NBMB FELIX GABRIEL TO CHRISMORGAN SHINT ESB : NBMB : 0001500F : 560979572893",
-                "DescriptionConfidence": 0.8065311064519907,
-                "DescriptionCoordinates": {
-                    "x1": 297,
-                    "y1": 1284,
-                    "x2": 676,
-                    "y2": 1284,
-                    "x3": 676,
-                    "y3": 1319,
-                    "x4": 297,
-                    "y4": 1319
-                },
-                "EndingBalance": 548500.0,
-                "EndingBalanceConfidence": 0.990051217375,
-                "EndingBalanceCoordinates": {
-                    "x1": 1419,
-                    "y1": 1289,
-                    "x2": 1506,
-                    "y2": 1289,
-                    "x3": 1506,
-                    "y3": 1304,
-                    "x4": 1419,
-                    "y4": 1304
-                },
-                "Type": "CREDIT"
-            },
-            {
-                "PageNumber": 1.0,
-                "Amount": 300000.0,
-                "AmountConfidence": 0.9889909427118643,
-                "AmountCoordinate": {
-                    "x1": 972,
-                    "y1": 1355,
-                    "x2": 1059,
-                    "y2": 1356,
-                    "x3": 1059,
-                    "y3": 1370,
-                    "x4": 972,
-                    "y4": 1369
-                },
-                "Date": "2023-07-20",
-                "DateConfidence": 0.9899811482638887,
-                "DateCoordinates": {
-                    "x1": 126,
-                    "y1": 1354,
-                    "x2": 272,
-                    "y2": 1354,
-                    "x3": 272,
-                    "y3": 1369,
-                    "x4": 126,
-                    "y4": 1369
-                },
-                "Description": "NBMB CHRISMORGAN SH TO RENALDY BUN ESB : NBMB : 0001500F : 560981752065",
-                "DescriptionConfidence": 0.806521352902521,
-                "DescriptionCoordinates": {
-                    "x1": 297,
-                    "y1": 1353,
-                    "x2": 635,
-                    "y2": 1353,
-                    "x3": 635,
-                    "y3": 1388,
-                    "x4": 297,
-                    "y4": 1388
-                },
-                "EndingBalance": 248500.0,
-                "EndingBalanceConfidence": 0.9900949518888889,
-                "EndingBalanceCoordinates": {
-                    "x1": 1419,
-                    "y1": 1360,
-                    "x2": 1506,
-                    "y2": 1360,
-                    "x3": 1506,
-                    "y3": 1374,
-                    "x4": 1419,
-                    "y4": 1374
-                },
-                "Type": "DEBIT"
-            },
-            {
-                "PageNumber": 1.0,
-                "Amount": 368000.0,
-                "AmountConfidence": 0.9286131438970588,
-                "AmountCoordinate": {
-                    "x1": 1193,
-                    "y1": 1428,
-                    "x2": 1280,
-                    "y2": 1428,
-                    "x3": 1280,
-                    "y3": 1442,
-                    "x4": 1193,
-                    "y4": 1442
-                },
-                "Date": "2023-07-20",
-                "DateConfidence": 0.9900920599999999,
-                "DateCoordinates": {
-                    "x1": 126,
-                    "y1": 1424,
-                    "x2": 273,
-                    "y2": 1424,
-                    "x3": 273,
-                    "y3": 1440,
-                    "x4": 126,
-                    "y4": 1440
-                },
-                "Description": "NBMB RENALDY BUN TO CHRISMORGAN SHINT ESB : NBMB : 0001500F : 560982892731",
-                "DescriptionConfidence": 0.8066256304165444,
-                "DescriptionCoordinates": {
-                    "x1": 298,
-                    "y1": 1424,
-                    "x2": 681,
-                    "y2": 1424,
-                    "x3": 681,
-                    "y3": 1459,
-                    "x4": 298,
-                    "y4": 1459
-                },
-                "EndingBalance": 616500.0,
-                "EndingBalanceConfidence": 0.9901269547000001,
-                "EndingBalanceCoordinates": {
-                    "x1": 1419,
-                    "y1": 1429,
-                    "x2": 1505,
-                    "y2": 1430,
-                    "x3": 1505,
-                    "y3": 1445,
-                    "x4": 1419,
-                    "y4": 1444
-                },
-                "Type": "CREDIT"
-            },
-            {
-                "PageNumber": 1.0,
-                "Amount": 488000.0,
-                "AmountConfidence": 0.9885851231506848,
-                "AmountCoordinate": {
-                    "x1": 973,
-                    "y1": 1497,
-                    "x2": 1060,
-                    "y2": 1497,
-                    "x3": 1060,
-                    "y3": 1512,
-                    "x4": 973,
-                    "y4": 1512
-                },
-                "Date": "2023-07-20",
-                "DateConfidence": 0.9901617983522727,
-                "DateCoordinates": {
-                    "x1": 125,
-                    "y1": 1495,
-                    "x2": 274,
-                    "y2": 1494,
-                    "x3": 274,
-                    "y3": 1510,
-                    "x4": 125,
-                    "y4": 1511
-                },
-                "Description": "NBMB CHRISMORGAN SH TO RENALDY BUN ESB : NBMB : 0001500F : 560984226045",
-                "DescriptionConfidence": 0.8065584201373626,
-                "DescriptionCoordinates": {
-                    "x1": 298,
-                    "y1": 1493,
-                    "x2": 635,
-                    "y2": 1493,
-                    "x3": 635,
-                    "y3": 1529,
-                    "x4": 298,
-                    "y4": 1529
-                },
-                "EndingBalance": 128500.0,
-                "EndingBalanceConfidence": 0.9901450727272726,
-                "EndingBalanceCoordinates": {
-                    "x1": 1420,
-                    "y1": 1498,
-                    "x2": 1507,
-                    "y2": 1500,
-                    "x3": 1507,
-                    "y3": 1516,
-                    "x4": 1420,
-                    "y4": 1514
-                },
-                "Type": "DEBIT"
-            },
-            {
-                "PageNumber": 1.0,
-                "Amount": 246218.0,
-                "AmountConfidence": 0.9280030917073171,
-                "AmountCoordinate": {
-                    "x1": 1194,
-                    "y1": 1568,
-                    "x2": 1279,
-                    "y2": 1567,
-                    "x3": 1279,
-                    "y3": 1583,
-                    "x4": 1194,
-                    "y4": 1584
-                },
-                "Date": "2023-07-20",
-                "DateConfidence": 0.9901990659895832,
-                "DateCoordinates": {
-                    "x1": 126,
-                    "y1": 1566,
-                    "x2": 273,
-                    "y2": 1565,
-                    "x3": 273,
-                    "y3": 1580,
-                    "x4": 126,
-                    "y4": 1581
-                },
-                "Description": "NBMB FELIX GABRIEL TO CHRISMORGAN SHINT ESB : NBMB : 0001500F : 560985962085",
-                "DescriptionConfidence": 0.8065875033208432,
-                "DescriptionCoordinates": {
-                    "x1": 298,
-                    "y1": 1563,
-                    "x2": 676,
-                    "y2": 1563,
-                    "x3": 676,
-                    "y3": 1600,
-                    "x4": 298,
-                    "y4": 1600
-                },
-                "EndingBalance": 374718.0,
-                "EndingBalanceConfidence": 0.9900249495,
-                "EndingBalanceCoordinates": {
-                    "x1": 1420,
-                    "y1": 1571,
-                    "x2": 1506,
-                    "y2": 1571,
-                    "x3": 1506,
-                    "y3": 1584,
-                    "x4": 1420,
-                    "y4": 1584
-                },
-                "Type": "CREDIT"
-            },
-            {
-                "PageNumber": 1.0,
-                "Amount": 168247.0,
-                "AmountConfidence": 0.9277779908152175,
-                "AmountCoordinate": {
-                    "x1": 1196,
-                    "y1": 1640,
-                    "x2": 1280,
-                    "y2": 1640,
-                    "x3": 1280,
-                    "y3": 1653,
-                    "x4": 1196,
-                    "y4": 1653
-                },
-                "Date": "2023-07-20",
-                "DateConfidence": 0.9901717270192307,
-                "DateCoordinates": {
-                    "x1": 125,
-                    "y1": 1637,
-                    "x2": 273,
-                    "y2": 1636,
-                    "x3": 273,
-                    "y3": 1651,
-                    "x4": 125,
-                    "y4": 1652
-                },
-                "Description": "NBMB FELIX GABRIEL TO CHRISMORGAN SHINT ESB : NBMB : 0001500F : 560987748646",
-                "DescriptionConfidence": 0.8174009374953566,
-                "DescriptionCoordinates": {
-                    "x1": 298,
-                    "y1": 1632,
-                    "x2": 675,
-                    "y2": 1632,
-                    "x3": 675,
-                    "y3": 1669,
-                    "x4": 298,
-                    "y4": 1670
-                },
-                "EndingBalance": 542965.0,
-                "EndingBalanceConfidence": 0.9895351746923076,
-                "EndingBalanceCoordinates": {
-                    "x1": 1420,
-                    "y1": 1641,
-                    "x2": 1506,
-                    "y2": 1641,
-                    "x3": 1506,
-                    "y3": 1654,
-                    "x4": 1420,
-                    "y4": 1654
-                },
-                "Type": "CREDIT"
-            },
-            {
-                "PageNumber": 1.0,
-                "Amount": 100000.0,
-                "AmountConfidence": 0.9280501977941176,
-                "AmountCoordinate": {
-                    "x1": 1196,
-                    "y1": 1709,
-                    "x2": 1281,
-                    "y2": 1709,
-                    "x3": 1281,
-                    "y3": 1724,
-                    "x4": 1196,
-                    "y4": 1724
-                },
-                "Date": "2023-07-20",
-                "DateConfidence": 0.9901930609375,
-                "DateCoordinates": {
-                    "x1": 125,
-                    "y1": 1708,
-                    "x2": 273,
-                    "y2": 1707,
-                    "x3": 273,
-                    "y3": 1723,
-                    "x4": 125,
-                    "y4": 1724
-                },
-                "Description": "NBMB FELIX GABRIEL TO CHRISMORGAN SHINT ESB : NBMB : 0001500F : 560987978408",
-                "DescriptionConfidence": 0.8308207151049215,
-                "DescriptionCoordinates": {
-                    "x1": 297,
-                    "y1": 1704,
-                    "x2": 676,
-                    "y2": 1704,
-                    "x3": 676,
-                    "y3": 1741,
-                    "x4": 297,
-                    "y4": 1741
-                },
-                "EndingBalance": 642965.0,
-                "EndingBalanceConfidence": 0.9892740857142859,
-                "EndingBalanceCoordinates": {
-                    "x1": 1421,
-                    "y1": 1710,
-                    "x2": 1508,
-                    "y2": 1711,
-                    "x3": 1508,
-                    "y3": 1726,
-                    "x4": 1421,
-                    "y4": 1725
-                },
-                "Type": "CREDIT"
-            },
-            {
-                "PageNumber": 1.0,
-                "Amount": 588000.0,
-                "AmountConfidence": 0.987482421894737,
-                "AmountCoordinate": {
-                    "x1": 975,
-                    "y1": 1776,
-                    "x2": 1061,
-                    "y2": 1778,
-                    "x3": 1061,
-                    "y3": 1794,
-                    "x4": 975,
-                    "y4": 1792
-                },
-                "Date": "2023-07-20",
-                "DateConfidence": 0.9901922597916666,
-                "DateCoordinates": {
-                    "x1": 124,
-                    "y1": 1779,
-                    "x2": 272,
-                    "y2": 1777,
-                    "x3": 272,
-                    "y3": 1792,
-                    "x4": 124,
-                    "y4": 1794
-                },
-                "Description": "NBMB CHRISMORGAN SH TO FELIX GABRIEL JON ESB : NBMB : 0001500F : 560988148295",
-                "DescriptionConfidence": 0.8310595837315394,
-                "DescriptionCoordinates": {
-                    "x1": 297,
-                    "y1": 1772,
-                    "x2": 676,
-                    "y2": 1772,
-                    "x3": 676,
-                    "y3": 1811,
-                    "x4": 297,
-                    "y4": 1811
-                },
-                "EndingBalance": 54965.0,
-                "EndingBalanceConfidence": 0.9892113736912753,
-                "EndingBalanceCoordinates": {
-                    "x1": 1430,
-                    "y1": 1782,
-                    "x2": 1506,
-                    "y2": 1782,
-                    "x3": 1506,
-                    "y3": 1796,
-                    "x4": 1430,
-                    "y4": 1796
-                },
-                "Type": "DEBIT"
-            },
-            {
-                "PageNumber": 2.0,
-                "Amount": 443535.0,
-                "AmountConfidence": 0.98797454,
-                "AmountCoordinate": {
-                    "x1": 1192,
-                    "y1": 342,
-                    "x2": 1279,
-                    "y2": 342,
-                    "x3": 1279,
-                    "y3": 356,
-                    "x4": 1192,
-                    "y4": 356
-                },
-                "Date": "2023-07-20",
-                "DateConfidence": 0.990341395,
-                "DateCoordinates": {
-                    "x1": 129,
-                    "y1": 343,
-                    "x2": 272,
-                    "y2": 342,
-                    "x3": 272,
-                    "y3": 357,
-                    "x4": 129,
-                    "y4": 358
-                },
-                "Description": "NBMB FELIX GABRIEL TO CHRISMORGAN SHINT ESB : NBMB : 0001500F : 560989318938",
-                "DescriptionConfidence": 0.986299995,
-                "DescriptionCoordinates": {
-                    "x1": 295,
-                    "y1": 339,
-                    "x2": 674,
-                    "y2": 339,
-                    "x3": 674,
-                    "y3": 379,
-                    "x4": 295,
-                    "y4": 378
-                },
-                "EndingBalance": 498500.0,
-                "EndingBalanceConfidence": 0.9871642850000001,
-                "EndingBalanceCoordinates": {
-                    "x1": 1418,
-                    "y1": 341,
-                    "x2": 1504,
-                    "y2": 341,
-                    "x3": 1504,
-                    "y3": 355,
-                    "x4": 1418,
-                    "y4": 355
-                },
-                "Type": "CREDIT"
-            },
-            {
-                "PageNumber": 2.0,
-                "Amount": 49500.0,
-                "AmountConfidence": 0.9860374626315791,
-                "AmountCoordinate": {
-                    "x1": 1202,
-                    "y1": 412,
-                    "x2": 1279,
-                    "y2": 412,
-                    "x3": 1279,
-                    "y3": 426,
-                    "x4": 1202,
-                    "y4": 426
-                },
-                "Date": "2023-07-20",
-                "DateConfidence": 0.9907666125,
-                "DateCoordinates": {
-                    "x1": 129,
-                    "y1": 414,
-                    "x2": 271,
-                    "y2": 412,
-                    "x3": 271,
-                    "y3": 426,
-                    "x4": 129,
-                    "y4": 428
-                },
-                "Description": "NBMB FELIX GABRIEL TO CHRISMORGAN SHINT ESB : NBMB : 0001500F : 560990461500",
-                "DescriptionConfidence": 0.986299995,
-                "DescriptionCoordinates": {
-                    "x1": 295,
-                    "y1": 410,
-                    "x2": 673,
-                    "y2": 410,
-                    "x3": 673,
-                    "y3": 449,
-                    "x4": 295,
-                    "y4": 448
-                },
-                "EndingBalance": 548000.0,
-                "EndingBalanceConfidence": 0.9877443589999999,
-                "EndingBalanceCoordinates": {
-                    "x1": 1419,
-                    "y1": 409,
-                    "x2": 1504,
-                    "y2": 410,
-                    "x3": 1504,
-                    "y3": 426,
-                    "x4": 1419,
-                    "y4": 425
-                },
-                "Type": "CREDIT"
-            },
-            {
-                "PageNumber": 2.0,
-                "Amount": 150000.0,
-                "AmountConfidence": 0.987372524137931,
-                "AmountCoordinate": {
-                    "x1": 1195,
-                    "y1": 482,
-                    "x2": 1278,
-                    "y2": 482,
-                    "x3": 1278,
-                    "y3": 497,
-                    "x4": 1195,
-                    "y4": 497
-                },
-                "Date": "2023-07-20",
-                "DateConfidence": 0.9902093110416667,
-                "DateCoordinates": {
-                    "x1": 128,
-                    "y1": 481,
-                    "x2": 272,
-                    "y2": 481,
-                    "x3": 272,
-                    "y3": 501,
-                    "x4": 128,
-                    "y4": 501
-                },
-                "Description": "NBMB FELIX GABRIEL TO CHRISMORGAN SHINT ESB : NBMB : 0001500F : 560991330809",
-                "DescriptionConfidence": 0.986299995,
-                "DescriptionCoordinates": {
-                    "x1": 295,
-                    "y1": 481,
-                    "x2": 673,
-                    "y2": 481,
-                    "x3": 673,
-                    "y3": 519,
-                    "x4": 295,
-                    "y4": 518
-                },
-                "EndingBalance": 698000.0,
-                "EndingBalanceConfidence": 0.9878883883333335,
-                "EndingBalanceCoordinates": {
-                    "x1": 1419,
-                    "y1": 481,
-                    "x2": 1504,
-                    "y2": 481,
-                    "x3": 1504,
-                    "y3": 496,
-                    "x4": 1419,
-                    "y4": 496
-                },
-                "Type": "CREDIT"
-            },
-            {
-                "PageNumber": 2.0,
-                "Amount": 199500.0,
-                "AmountConfidence": 0.989420492272727,
-                "AmountCoordinate": {
-                    "x1": 973,
-                    "y1": 554,
-                    "x2": 1059,
-                    "y2": 554,
-                    "x3": 1059,
-                    "y3": 569,
-                    "x4": 973,
-                    "y4": 569
-                },
-                "Date": "2023-07-20",
-                "DateConfidence": 0.99022626140625,
-                "DateCoordinates": {
-                    "x1": 128,
-                    "y1": 558,
-                    "x2": 271,
-                    "y2": 555,
-                    "x3": 272,
-                    "y3": 569,
-                    "x4": 129,
-                    "y4": 572
-                },
-                "Description": "NBMB CHRISMORGAN SH TO FELIX GABRIEL JON ESB : NBMB : 0001500F : 560995706045",
-                "DescriptionConfidence": 0.986299995,
-                "DescriptionCoordinates": {
-                    "x1": 295,
-                    "y1": 552,
-                    "x2": 675,
-                    "y2": 552,
-                    "x3": 675,
-                    "y3": 590,
-                    "x4": 295,
-                    "y4": 589
-                },
-                "EndingBalance": 498500.0,
-                "EndingBalanceConfidence": 0.9878991750000001,
-                "EndingBalanceCoordinates": {
-                    "x1": 1418,
-                    "y1": 553,
-                    "x2": 1505,
-                    "y2": 553,
-                    "x3": 1505,
-                    "y3": 567,
-                    "x4": 1418,
-                    "y4": 567
-                },
-                "Type": "DEBIT"
-            },
-            {
-                "PageNumber": 2.0,
-                "Amount": 99500.0,
-                "AmountConfidence": 0.9901781216129034,
-                "AmountCoordinate": {
-                    "x1": 982,
-                    "y1": 625,
-                    "x2": 1060,
-                    "y2": 625,
-                    "x3": 1060,
-                    "y3": 639,
-                    "x4": 982,
-                    "y4": 639
-                },
-                "Date": "2023-07-20",
-                "DateConfidence": 0.9901426203749999,
-                "DateCoordinates": {
-                    "x1": 129,
-                    "y1": 630,
-                    "x2": 272,
-                    "y2": 626,
-                    "x3": 273,
-                    "y3": 639,
-                    "x4": 130,
-                    "y4": 643
-                },
-                "Description": "NBMB CHRISMORGAN SH TO FELIX GABRIEL JON ESB : NBMB : 0001500F : 561002412169",
-                "DescriptionConfidence": 0.986299995,
-                "DescriptionCoordinates": {
-                    "x1": 296,
-                    "y1": 622,
-                    "x2": 675,
-                    "y2": 622,
-                    "x3": 675,
-                    "y3": 660,
-                    "x4": 296,
-                    "y4": 659
-                },
-                "EndingBalance": 399000.0,
-                "EndingBalanceConfidence": 0.9882549686000001,
-                "EndingBalanceCoordinates": {
-                    "x1": 1419,
-                    "y1": 624,
-                    "x2": 1504,
-                    "y2": 624,
-                    "x3": 1504,
-                    "y3": 638,
-                    "x4": 1419,
-                    "y4": 638
-                },
-                "Type": "DEBIT"
-            },
-            {
-                "PageNumber": 2.0,
-                "Amount": 200000.0,
-                "AmountConfidence": 0.9903218997560976,
-                "AmountCoordinate": {
-                    "x1": 973,
-                    "y1": 694,
-                    "x2": 1059,
-                    "y2": 694,
-                    "x3": 1059,
-                    "y3": 709,
-                    "x4": 973,
-                    "y4": 709
-                },
-                "Date": "2023-07-20",
-                "DateConfidence": 0.9895820545833333,
-                "DateCoordinates": {
-                    "x1": 128,
-                    "y1": 699,
-                    "x2": 272,
-                    "y2": 696,
-                    "x3": 273,
-                    "y3": 710,
-                    "x4": 129,
-                    "y4": 713
-                },
-                "Description": "NBMB CHRISMORGAN SH TO FELIX GABRIEL JON ESB : NBMB : 0001500F : 561003149332",
-                "DescriptionConfidence": 0.986299995,
-                "DescriptionCoordinates": {
-                    "x1": 295,
-                    "y1": 694,
-                    "x2": 676,
-                    "y2": 694,
-                    "x3": 676,
-                    "y3": 731,
-                    "x4": 295,
-                    "y4": 730
-                },
-                "EndingBalance": 199000.0,
-                "EndingBalanceConfidence": 0.988602767,
-                "EndingBalanceCoordinates": {
-                    "x1": 1419,
-                    "y1": 693,
-                    "x2": 1505,
-                    "y2": 693,
-                    "x3": 1505,
-                    "y3": 708,
-                    "x4": 1419,
-                    "y4": 708
-                },
-                "Type": "DEBIT"
-            },
-            {
-                "PageNumber": 2.0,
-                "Amount": 100000.0,
-                "AmountConfidence": 0.990720673137255,
-                "AmountCoordinate": {
-                    "x1": 974,
-                    "y1": 763,
-                    "x2": 1058,
-                    "y2": 762,
-                    "x3": 1058,
-                    "y3": 777,
-                    "x4": 974,
-                    "y4": 778
-                },
-                "Date": "2023-07-20",
-                "DateConfidence": 0.9895482419642857,
-                "DateCoordinates": {
-                    "x1": 129,
-                    "y1": 765,
-                    "x2": 273,
-                    "y2": 764,
-                    "x3": 273,
-                    "y3": 784,
-                    "x4": 129,
-                    "y4": 785
-                },
-                "Description": "NBMB CHRISMORGAN SH TO FELIX GABRIEL JON ESB : NBMB : 0001500F : 561003846168",
-                "DescriptionConfidence": 0.986299995,
-                "DescriptionCoordinates": {
-                    "x1": 295,
-                    "y1": 763,
-                    "x2": 675,
-                    "y2": 763,
-                    "x3": 675,
-                    "y3": 800,
-                    "x4": 295,
-                    "y4": 800
-                },
-                "EndingBalance": 99000.0,
-                "EndingBalanceConfidence": 0.9883731555072466,
-                "EndingBalanceCoordinates": {
-                    "x1": 1428,
-                    "y1": 762,
-                    "x2": 1504,
-                    "y2": 761,
-                    "x3": 1504,
-                    "y3": 778,
-                    "x4": 1428,
-                    "y4": 779
-                },
-                "Type": "DEBIT"
-            },
-            {
-                "PageNumber": 2.0,
-                "Amount": 399500.0,
-                "AmountConfidence": 0.9842619636363635,
-                "AmountCoordinate": {
-                    "x1": 1193,
-                    "y1": 834,
-                    "x2": 1280,
-                    "y2": 834,
-                    "x3": 1280,
-                    "y3": 848,
-                    "x4": 1193,
-                    "y4": 848
-                },
-                "Date": "2023-07-20",
-                "DateConfidence": 0.989488773515625,
-                "DateCoordinates": {
-                    "x1": 129,
-                    "y1": 840,
-                    "x2": 273,
-                    "y2": 837,
-                    "x3": 274,
-                    "y3": 851,
-                    "x4": 130,
-                    "y4": 854
-                },
-                "Description": "NBMB FELIX GABRIEL TO CHRISMORGAN SHINT ESB : NBMB : 0001500F : 561004648463",
-                "DescriptionConfidence": 0.986299995,
-                "DescriptionCoordinates": {
-                    "x1": 297,
-                    "y1": 835,
-                    "x2": 674,
-                    "y2": 835,
-                    "x3": 674,
-                    "y3": 871,
-                    "x4": 297,
-                    "y4": 871
-                },
-                "EndingBalance": 498500.0,
-                "EndingBalanceConfidence": 0.9883645862025315,
-                "EndingBalanceCoordinates": {
-                    "x1": 1418,
-                    "y1": 835,
-                    "x2": 1505,
-                    "y2": 835,
-                    "x3": 1505,
-                    "y3": 849,
-                    "x4": 1418,
-                    "y4": 849
-                },
-                "Type": "CREDIT"
-            },
-            {
-                "PageNumber": 2.0,
-                "Amount": 6000.0,
-                "AmountConfidence": 0.9422396264516129,
-                "AmountCoordinate": {
-                    "x1": 990,
-                    "y1": 906,
-                    "x2": 1058,
-                    "y2": 906,
-                    "x3": 1058,
-                    "y3": 921,
-                    "x4": 990,
-                    "y4": 921
-                },
-                "Date": "2023-07-20",
-                "DateConfidence": 0.9896968560416666,
-                "DateCoordinates": {
-                    "x1": 130,
-                    "y1": 910,
-                    "x2": 275,
-                    "y2": 908,
-                    "x3": 275,
-                    "y3": 923,
-                    "x4": 130,
-                    "y4": 925
-                },
-                "Description": "Admin Fee",
-                "DescriptionConfidence": 0.986299995,
-                "DescriptionCoordinates": {
-                    "x1": 295,
-                    "y1": 906,
-                    "x2": 377,
-                    "y2": 905,
-                    "x3": 377,
-                    "y3": 920,
-                    "x4": 295,
-                    "y4": 921
-                },
-                "EndingBalance": 492500.0,
-                "EndingBalanceConfidence": 0.9882839831460676,
-                "EndingBalanceCoordinates": {
-                    "x1": 1418,
-                    "y1": 904,
-                    "x2": 1504,
-                    "y2": 903,
-                    "x3": 1504,
-                    "y3": 919,
-                    "x4": 1418,
-                    "y4": 920
-                },
-                "Type": "DEBIT"
-            }
-        ],
-        "TransactionSummary": [
-            {
-                "Credit": 2725000.0,
-                "CreditConfidence": 0.8882008151190476,
-                "Debit": 2232500.0,
-                "DebitConfidence": 0.9422396264516129,
-                "CreditFreq": 12,
-                "DebitFreq": 12,
-                "BeginningBalance": 0.0,
-                "BeginningBalanceConfidence": 0.989385313,
-                "EndingBalance": 492500.0,
-                "EndingBalanceConfidence": 0.9882839831460676,
-                "Period": "2023-07-01",
-                "Period_date_confidence": 0.987338375625,
-                "WarningMutasi2": false,
-                "WarningMutasi2Description": ""
-            }
-        ]
-    }
+	"read": {
+		"Identity": {
+			"page_number": 1,
+			"account_number": "052601013193505",
+			"account_number_confidence": 0.991,
+			"account_number_coordinate": {
+				"x": 325.0,
+				"y": 575.0,
+				"w": 155.0,
+				"h": 19.0
+			},
+			"bank_office": "KCP Glodok",
+			"bank_office_confidence": 0.9935,
+			"bank_office_coordinate": {
+				"x": 1038.0,
+				"y": 577.0,
+				"w": 96.0,
+				"h": 20.0
+			},
+			"name": "CHRIS MORGAN SHINTARO",
+			"name_confidence": 0.9923333333333333,
+			"name_coordinate": {
+				"x": 125.0,
+				"y": 378.0,
+				"w": 326.0,
+				"h": 25.0
+			},
+			"address": "JL SUMATERA LAUT NO 36 E,Rt.015/004,BAGANSIAPIAPI KOT. BANGKO BAGANSIAPIAPI KOT.",
+			"address_confidence": 0.9822999999999998,
+			"address_coordinate": {
+				"x": 125.0,
+				"y": 445.0,
+				"w": 463.0,
+				"h": 81.0
+			},
+			"currency": "IDR",
+			"currency_confidence": 0.995,
+			"currency_coordinate": {
+				"x": 328.0,
+				"y": 709.0,
+				"w": 29.0,
+				"h": 18.0
+			}
+		},
+		"TransactionHistory": [
+			{
+				"page_number": 1,
+				"date": "14-07-2023",
+				"date_confidence": 98.92562866210938,
+				"date_coordinate": {
+					"x": 110.4104706197977,
+					"y": 860.0262058079243,
+					"w": 174.5031760185957,
+					"h": 52.31757324561477
+				},
+				"description": "TRF 052601013193505 111441007674866",
+				"description_confidence": 95.46676381429036,
+				"description_coordinate": {
+					"x": 284.9013308286667,
+					"y": 859.3388188481331,
+					"w": 428.23336485028269,
+					"h": 52.723668126389387
+				},
+				"type": "CREDIT",
+				"type_confidence": 99.0,
+				"type_coordinate": {
+					"x": 1066.2608338594437,
+					"y": 858.4154715538025,
+					"w": 222.09520880877973,
+					"h": 52.387420292943719
+				},
+				"amount": 100000.0,
+				"amount_confidence": 99.69564056396485,
+				"amount_coordinate": {
+					"x": 1066.2608338594437,
+					"y": 858.4154715538025,
+					"w": 222.09520880877973,
+					"h": 52.387420292943719
+				},
+				"ending_balance": 100000.0,
+				"ending_balance_confidence": 98.07323455810547,
+				"ending_balance_coordinate": {
+					"x": 1288.333800315857,
+					"y": 858.0518765449524,
+					"w": 226.52944220602513,
+					"h": 52.39301868714392
+				}
+			},
+			{
+				"page_number": 1,
+				"date": "14-07-2023",
+				"date_confidence": 98.25749206542969,
+				"date_coordinate": {
+					"x": 110.42104990035296,
+					"y": 912.0624651908875,
+					"w": 174.50395191460849,
+					"h": 48.316795194521549
+				},
+				"description": "; ESB:INDS:0002800D:7881eedf8e34",
+				"description_confidence": 84.79970169067383,
+				"description_coordinate": {
+					"x": 284.9136466383934,
+					"y": 911.3721505105496,
+					"w": 428.2363206446171,
+					"h": 48.72471554391086
+				},
+				"type": "CREDIT",
+				"type_confidence": 99.0,
+				"type_coordinate": {
+					"x": 1066.2808347344399,
+					"y": 910.4448995888233,
+					"w": 222.09567680954934,
+					"h": 48.387470019981268
+				},
+				"amount": 400000.0,
+				"amount_confidence": 99.84369659423828,
+				"amount_coordinate": {
+					"x": 1066.2808347344399,
+					"y": 910.4448995888233,
+					"w": 222.09567680954934,
+					"h": 48.387470019981268
+				},
+				"ending_balance": 500000.0,
+				"ending_balance_confidence": 98.8828125,
+				"ending_balance_coordinate": {
+					"x": 1288.3560672998429,
+					"y": 910.0797710120678,
+					"w": 226.52978704869748,
+					"h": 48.393212186172608
+				}
+			},
+			{
+				"page_number": 1,
+				"date": "17-07-2023",
+				"date_confidence": 96.13648986816406,
+				"date_coordinate": {
+					"x": 110.43081633746624,
+					"y": 960.0968791246414,
+					"w": 174.50578697025777,
+					"h": 49.31954383850098
+				},
+				"description": "082390932700|1SMS|14/07/2023-14/07/2023",
+				"description_confidence": 31.329500198364259,
+				"description_coordinate": {
+					"x": 284.92500181496146,
+					"y": 959.403915554285,
+					"w": 428.24055728316309,
+					"h": 49.729036966338757
+				},
+				"type": "DEBIT",
+				"type_confidence": 99.0,
+				"type_coordinate": {
+					"x": 822.1996148228645,
+					"y": 958.8323826789856,
+					"w": 244.11863534152509,
+					"h": 49.42760373838246
+				},
+				"amount": 500.0,
+				"amount_confidence": 99.71236419677735,
+				"amount_coordinate": {
+					"x": 822.1996148228645,
+					"y": 958.8323826789856,
+					"w": 244.11863534152509,
+					"h": 49.42760373838246
+				},
+				"ending_balance": 499500.0,
+				"ending_balance_confidence": 99.88145446777344,
+				"ending_balance_coordinate": {
+					"x": 1288.376560807228,
+					"y": 958.1063776910305,
+					"w": 226.53232410550118,
+					"h": 49.39613074250519
+				}
+			},
+			{
+				"page_number": 1,
+				"date": "20-07-2023",
+				"date_confidence": 95.37680435180664,
+				"date_coordinate": {
+					"x": 110.44079214334488,
+					"y": 1009.1329220235348,
+					"w": 174.50716634094716,
+					"h": 48.320794669911268
+				},
+				"description": "Monthly Fee ATM",
+				"description_confidence": 99.82921091715495,
+				"description_coordinate": {
+					"x": 284.936603307724,
+					"y": 1008.4371701478958,
+					"w": 428.2442027628422,
+					"h": 48.731947710737589
+				},
+				"type": "DEBIT",
+				"type_confidence": 99.0,
+				"type_coordinate": {
+					"x": 822.2161672711372,
+					"y": 1007.8633369207382,
+					"w": 244.120531976223,
+					"h": 48.42939480394125
+				},
+				"amount": 1000.0,
+				"amount_confidence": 99.89669036865235,
+				"amount_coordinate": {
+					"x": 822.2161672711372,
+					"y": 1007.8633369207382,
+					"w": 244.120531976223,
+					"h": 48.42939480394125
+				},
+				"ending_balance": 498500.0,
+				"ending_balance_confidence": 99.93678283691406,
+				"ending_balance_coordinate": {
+					"x": 1288.3975469470025,
+					"y": 1007.1345436275005,
+					"w": 226.53397442400456,
+					"h": 48.39787388406694
+				}
+			},
+			{
+				"page_number": 1,
+				"date": "20-07-2023",
+				"date_confidence": 96.82213592529297,
+				"date_coordinate": {
+					"x": 110.45055858045817,
+					"y": 1057.1690786480904,
+					"w": 174.5139646679163,
+					"h": 70.34055122360587
+				},
+				"description": "NBMB CHRISMORGAN SH TO FELIX GABRIEL JON ESB:NBMB:0001500F:560977611050",
+				"description_confidence": 95.22575569152832,
+				"description_coordinate": {
+					"x": 284.94795848429205,
+					"y": 1056.4706081748009,
+					"w": 428.2551392018795,
+					"h": 70.75280215963721
+				},
+				"type": "DEBIT",
+				"type_confidence": 99.0,
+				"type_coordinate": {
+					"x": 822.2324734032154,
+					"y": 1055.8946140110493,
+					"w": 244.13122209906579,
+					"h": 70.44753501191735
+				},
+				"amount": 50000.0,
+				"amount_confidence": 99.1069107055664,
+				"amount_coordinate": {
+					"x": 822.2324734032154,
+					"y": 1055.8946140110493,
+					"w": 244.13122209906579,
+					"h": 70.44753501191735
+				},
+				"ending_balance": 448500.0,
+				"ending_balance_confidence": 99.91313171386719,
+				"ending_balance_coordinate": {
+					"x": 1288.4180404543877,
+					"y": 1055.162962704897,
+					"w": 226.54638876020909,
+					"h": 70.41455458849669
+				}
+			},
+			{
+				"page_number": 1,
+				"date": "20-07-2023",
+				"date_confidence": 97.38409805297852,
+				"date_coordinate": {
+					"x": 110.46479565650225,
+					"y": 1127.2234364748,
+					"w": 174.51629235595466,
+					"h": 70.3440235350281
+				},
+				"description": "NBMB CHRISMORGAN SH TO FELIX GABRIEL JON ESB:NBMB:0001500F:560978201604",
+				"description_confidence": 95.11709308624268,
+				"description_coordinate": {
+					"x": 284.9645355641842,
+					"y": 1126.520992666483,
+					"w": 428.2608044743538,
+					"h": 70.75860532000661
+				},
+				"type": "DEBIT",
+				"type_confidence": 99.0,
+				"type_coordinate": {
+					"x": 822.2561690211296,
+					"y": 1125.9417222440243,
+					"w": 244.13447347283364,
+					"h": 70.45164340548218
+				},
+				"amount": 200000.0,
+				"amount_confidence": 99.78443145751953,
+				"amount_coordinate": {
+					"x": 822.2561690211296,
+					"y": 1125.9417222440243,
+					"w": 244.13447347283364,
+					"h": 70.45164340548218
+				},
+				"ending_balance": 248500.0,
+				"ending_balance_confidence": 99.90409851074219,
+				"ending_balance_coordinate": {
+					"x": 1288.4478939771653,
+					"y": 1125.20595818758,
+					"w": 226.5493938177824,
+					"h": 70.41850178316236
+				}
+			},
+			{
+				"page_number": 1,
+				"date": "20-07-2023",
+				"date_confidence": 98.40754699707031,
+				"date_coordinate": {
+					"x": 110.47904504835606,
+					"y": 1197.2796066999436,
+					"w": 174.51860772818328,
+					"h": 70.34749148972333
+				},
+				"description": "NBMB FELIX GABRIEL TO CHRISMORGAN SHINT ESB:NBMB:0001500F:560978682644",
+				"description_confidence": 93.87519781930107,
+				"description_coordinate": {
+					"x": 284.9810880124569,
+					"y": 1196.5733289718629,
+					"w": 428.266519010067,
+					"h": 70.76441283710301
+				},
+				"type": "CREDIT",
+				"type_confidence": 99.0,
+				"type_coordinate": {
+					"x": 1066.3905932307244,
+					"y": 1195.6244686841965,
+					"w": 222.11710631847383,
+					"h": 70.41718169488013
+				},
+				"amount": 250000.0,
+				"amount_confidence": 99.84197998046875,
+				"amount_coordinate": {
+					"x": 1066.3905932307244,
+					"y": 1195.6244686841965,
+					"w": 222.11710631847383,
+					"h": 70.41718169488013
+				},
+				"ending_balance": 498500.0,
+				"ending_balance_confidence": 99.90912628173828,
+				"ending_balance_coordinate": {
+					"x": 1288.4778460264207,
+					"y": 1195.250835776329,
+					"w": 226.55239887535573,
+					"h": 70.42244897782803
+				}
+			},
+			{
+				"page_number": 1,
+				"date": "20-07-2023",
+				"date_confidence": 96.07884979248047,
+				"date_coordinate": {
+					"x": 110.49329444020987,
+					"y": 1267.3377287387849,
+					"w": 174.52116941660644,
+					"h": 71.35185647942126
+				},
+				"description": "NBMB FELIX GABRIEL TO CHRISMORGAN SHINT ESB:NBMB:0001500F:560979572893",
+				"description_confidence": 96.21407209123884,
+				"description_coordinate": {
+					"x": 284.99766509234908,
+					"y": 1266.6274079680443,
+					"w": 428.2725291252136,
+					"h": 71.77108689211309
+				},
+				"type": "CREDIT",
+				"type_confidence": 99.0,
+				"type_coordinate": {
+					"x": 1066.4175894856454,
+					"y": 1265.673249900341,
+					"w": 222.1205054819584,
+					"h": 71.42185601219535
+				},
+				"amount": 50000.0,
+				"amount_confidence": 99.20022583007813,
+				"amount_coordinate": {
+					"x": 1066.4175894856454,
+					"y": 1265.673249900341,
+					"w": 222.1205054819584,
+					"h": 71.42185601219535
+				},
+				"ending_balance": 548500.0,
+				"ending_balance_confidence": 99.53336334228516,
+				"ending_balance_coordinate": {
+					"x": 1288.507798075676,
+					"y": 1265.2975257635117,
+					"w": 226.5558965653181,
+					"h": 71.42713636532426
+				}
+			},
+			{
+				"page_number": 1,
+				"date": "20-07-2023",
+				"date_confidence": 97.89535140991211,
+				"date_coordinate": {
+					"x": 110.5077408850193,
+					"y": 1338.3985253572465,
+					"w": 174.52328773587943,
+					"h": 70.35448403656483
+				},
+				"description": "NBMB CHRISMORGAN SH TO RENALDY BUN ESB:NBMB:0001500F:560981752065",
+				"description_confidence": 96.51120431082589,
+				"description_coordinate": {
+					"x": 285.0144638568163,
+					"y": 1337.6841615438462,
+					"w": 428.2779973447323,
+					"h": 70.77610629238188
+				},
+				"type": "DEBIT",
+				"type_confidence": 99.0,
+				"type_coordinate": {
+					"x": 822.3276499807835,
+					"y": 1337.0951320528985,
+					"w": 244.14425222575665,
+					"h": 70.4640339370817
+				},
+				"amount": 300000.0,
+				"amount_confidence": 99.8508071899414,
+				"amount_coordinate": {
+					"x": 822.3276499807835,
+					"y": 1337.0951320528985,
+					"w": 244.14425222575665,
+					"h": 70.4640339370817
+				},
+				"ending_balance": 248500.0,
+				"ending_balance_confidence": 99.91886901855469,
+				"ending_balance_coordinate": {
+					"x": 1288.5380457043648,
+					"y": 1336.3468903303147,
+					"w": 226.55848288536073,
+					"h": 70.43040436133743
+				}
+			},
+			{
+				"page_number": 1,
+				"date": "20-07-2023",
+				"date_confidence": 97.62315368652344,
+				"date_coordinate": {
+					"x": 110.52199027687311,
+					"y": 1408.460272192955,
+					"w": 174.52561542391778,
+					"h": 70.35795199126005
+				},
+				"description": "NBMB RENALDY BUN TO CHRISMORGAN SHINT ESB:NBMB:0001500F:560982892731",
+				"description_confidence": 97.517336164202,
+				"description_coordinate": {
+					"x": 285.03104093670847,
+					"y": 1407.7420047521592,
+					"w": 428.2837118804455,
+					"h": 70.78191380947829
+				},
+				"type": "CREDIT",
+				"type_confidence": 99.0,
+				"type_coordinate": {
+					"x": 1066.4718775749207,
+					"y": 1406.777251124382,
+					"w": 222.12602296471597,
+					"h": 70.42896228469908
+				},
+				"amount": 368000.0,
+				"amount_confidence": 99.89418029785156,
+				"amount_coordinate": {
+					"x": 1066.4718775749207,
+					"y": 1406.777251124382,
+					"w": 222.12602296471597,
+					"h": 70.42896228469908
+				},
+				"ending_balance": 616500.0,
+				"ending_balance_confidence": 99.90274810791016,
+				"ending_balance_coordinate": {
+					"x": 1288.5679977536202,
+					"y": 1406.3973445296288,
+					"w": 226.56148794293405,
+					"h": 70.4343515560031
+				}
+			},
+			{
+				"page_number": 1,
+				"date": "20-07-2023",
+				"date_confidence": 99.21695709228516,
+				"date_coordinate": {
+					"x": 110.53623966872692,
+					"y": 1478.5239708423615,
+					"w": 174.52817711234094,
+					"h": 71.36239540204406
+				},
+				"description": "NBMB CHRISMORGAN SH TO RENALDY BUN ESB:NBMB:0001500F:560984226045",
+				"description_confidence": 97.35420227050781,
+				"description_coordinate": {
+					"x": 285.04759338498118,
+					"y": 1477.80179977417,
+					"w": 428.2897219955921,
+					"h": 71.78866628557444
+				},
+				"type": "DEBIT",
+				"type_confidence": 99.0,
+				"type_coordinate": {
+					"x": 822.3750904798508,
+					"y": 1477.206217765808,
+					"w": 244.1511490792036,
+					"h": 71.47313468903303
+				},
+				"amount": 488000.0,
+				"amount_confidence": 99.87566375732422,
+				"amount_coordinate": {
+					"x": 822.3750904798508,
+					"y": 1477.206217765808,
+					"w": 244.1511490792036,
+					"h": 71.47313468903303
+				},
+				"ending_balance": 128500.0,
+				"ending_balance_confidence": 99.88825225830078,
+				"ending_balance_coordinate": {
+					"x": 1288.5979498028756,
+					"y": 1476.4497505426407,
+					"w": 226.56496100127698,
+					"h": 71.4391173645854
+				}
+			},
+			{
+				"page_number": 1,
+				"date": "20-07-2023",
+				"date_confidence": 99.05080795288086,
+				"date_coordinate": {
+					"x": 110.55068611353636,
+					"y": 1549.5904834866524,
+					"w": 174.53052943199874,
+					"h": 71.36594613455236
+				},
+				"description": "NBMB FELIX GABRIEL TO CHRISMORGAN SHINT ESB:NBMB:0001500F:560985962085",
+				"description_confidence": 97.00122506277902,
+				"description_coordinate": {
+					"x": 285.06441678106787,
+					"y": 1548.864269375801,
+					"w": 428.2954857945442,
+					"h": 71.79458707757294
+				},
+				"type": "CREDIT",
+				"type_confidence": 99.0,
+				"type_coordinate": {
+					"x": 1066.5262641906739,
+					"y": 1547.888780772686,
+					"w": 222.1324025541544,
+					"h": 71.43771014176309
+				},
+				"amount": 246218.0,
+				"amount_confidence": 99.88722229003906,
+				"amount_coordinate": {
+					"x": 1066.5262641906739,
+					"y": 1547.888780772686,
+					"w": 222.1324025541544,
+					"h": 71.43771014176309
+				},
+				"ending_balance": 374718.0,
+				"ending_balance_confidence": 97.06249237060547,
+				"ending_balance_coordinate": {
+					"x": 1288.6282959580422,
+					"y": 1547.5046917200089,
+					"w": 226.5680153220892,
+					"h": 71.44315169379115
+				}
+			},
+			{
+				"page_number": 1,
+				"date": "20-07-2023",
+				"date_confidence": 99.53859329223633,
+				"date_coordinate": {
+					"x": 110.5651325583458,
+					"y": 1620.658947944641,
+					"w": 174.53264775127173,
+					"h": 70.36846477352083
+				},
+				"description": "NBMB FELIX GABRIEL TO CHRISMORGAN SHINT ESB:NBMB:0001500F:560987748646",
+				"description_confidence": 97.69285038539342,
+				"description_coordinate": {
+					"x": 285.0812155455351,
+					"y": 1619.92869079113,
+					"w": 428.3009540140629,
+					"h": 70.79949755966664
+				},
+				"type": "CREDIT",
+				"type_confidence": 99.0,
+				"type_coordinate": {
+					"x": 1066.5535560250283,
+					"y": 1618.947904407978,
+					"w": 222.13496424257756,
+					"h": 70.44079951196909
+				},
+				"amount": 168247.0,
+				"amount_confidence": 99.76527404785156,
+				"amount_coordinate": {
+					"x": 1066.5535560250283,
+					"y": 1618.947904407978,
+					"w": 222.13496424257756,
+					"h": 70.44079951196909
+				},
+				"ending_balance": 542965.0,
+				"ending_balance_confidence": 99.82645416259766,
+				"ending_balance_coordinate": {
+					"x": 1288.6586421132088,
+					"y": 1618.561724126339,
+					"w": 226.5706016421318,
+					"h": 70.44631077162922
+				}
+			},
+			{
+				"page_number": 1,
+				"date": "20-07-2023",
+				"date_confidence": 99.53558731079102,
+				"date_coordinate": {
+					"x": 110.5793819501996,
+					"y": 1690.7282232046128,
+					"w": 174.53520943969489,
+					"h": 71.37299096211791
+				},
+				"description": "NBMB FELIX GABRIEL TO CHRISMORGAN SHINT FSB:NBMB:0001500F:560987978408",
+				"description_confidence": 93.41920362200055,
+				"description_coordinate": {
+					"x": 285.09779262542727,
+					"y": 1689.994062423706,
+					"w": 428.3069641292095,
+					"h": 71.80633717030287
+				},
+				"type": "CREDIT",
+				"type_confidence": 99.0,
+				"type_coordinate": {
+					"x": 1066.5805522799493,
+					"y": 1689.0079782605172,
+					"w": 222.13836340606214,
+					"h": 71.44563502818346
+				},
+				"amount": 100000.0,
+				"amount_confidence": 99.5212173461914,
+				"amount_coordinate": {
+					"x": 1066.5805522799493,
+					"y": 1689.0079782605172,
+					"w": 222.13836340606214,
+					"h": 71.44563502818346
+				},
+				"ending_balance": 642965.0,
+				"ending_balance_confidence": 99.90068817138672,
+				"ending_balance_coordinate": {
+					"x": 1288.6884956359864,
+					"y": 1688.619706749916,
+					"w": 226.5740993320942,
+					"h": 71.4511593580246
+				}
+			},
+			{
+				"page_number": 1,
+				"date": "20-07-2023",
+				"date_confidence": 99.36521530151367,
+				"date_coordinate": {
+					"x": 110.59384071081877,
+					"y": 1761.800451874733,
+					"w": 174.5359114408493,
+					"h": 64.39782310463488
+				},
+				"description": "NBMB CHRISMORGAN SH TO FELIX GABRIEL JON ESB:NBMB:0001500F:560988148295",
+				"description_confidence": 96.38101005554199,
+				"description_coordinate": {
+					"x": 285.1145913898945,
+					"y": 1761.0623874664307,
+					"w": 428.3105110824108,
+					"h": 64.83369621448219
+				},
+				"type": "DEBIT",
+				"type_confidence": 99.0,
+				"type_coordinate": {
+					"x": 822.4709567427635,
+					"y": 1760.4535610079766,
+					"w": 244.16159288585187,
+					"h": 64.51180379651487
+				},
+				"amount": 588000.0,
+				"amount_confidence": 99.82447814941406,
+				"amount_coordinate": {
+					"x": 822.4709567427635,
+					"y": 1760.4535610079766,
+					"w": 244.16159288585187,
+					"h": 64.51180379651487
+				},
+				"ending_balance": 54965.0,
+				"ending_balance_confidence": 99.88796997070313,
+				"ending_balance_coordinate": {
+					"x": 1288.718841791153,
+					"y": 1759.6803639531136,
+					"w": 226.5738776475191,
+					"h": 64.47755992226303
+				}
+			},
+			{
+				"page_number": 2,
+				"date": "20-07-2023",
+				"date_confidence": 99.42140197753906,
+				"date_coordinate": {
+					"x": 115.62217645347119,
+					"y": 321.70473016798499,
+					"w": 170.3275253623724,
+					"h": 73.18532840162516
+				},
+				"description": "NBMB FELIX GABRIEL TO CHRISMORGAN SHINT ESB:NBMB:0001500F:560989318938",
+				"description_confidence": 97.33565630231586,
+				"description_coordinate": {
+					"x": 285.9146756529808,
+					"y": 321.8609449714422,
+					"w": 428.2156793475151,
+					"h": 73.42229949682951
+				},
+				"type": "CREDIT",
+				"type_confidence": 99.0,
+				"type_coordinate": {
+					"x": 1069.2574181556702,
+					"y": 322.5795260965824,
+					"w": 220.1227826178074,
+					"h": 73.2319366671145
+				},
+				"amount": 443535.0,
+				"amount_confidence": 99.94477844238281,
+				"amount_coordinate": {
+					"x": 1069.2574181556702,
+					"y": 322.5795260965824,
+					"w": 220.1227826178074,
+					"h": 73.2319366671145
+				},
+				"ending_balance": 498500.0,
+				"ending_balance_confidence": 99.92784118652344,
+				"ending_balance_coordinate": {
+					"x": 1289.3565051555634,
+					"y": 322.78143425285819,
+					"w": 222.46507720649243,
+					"h": 73.23428929969669
+				}
+			},
+			{
+				"page_number": 2,
+				"date": "20-07-2023",
+				"date_confidence": 98.90248107910156,
+				"date_coordinate": {
+					"x": 115.58675618469715,
+					"y": 394.7336869239807,
+					"w": 170.32791946828366,
+					"h": 70.185830777511
+				},
+				"description": "NBMB FELIX GABRIEL TO CHRISMORGAN SHINT ESB:NBMB:0001500F:560990461500",
+				"description_confidence": 97.99350302559989,
+				"description_coordinate": {
+					"x": 285.8811027556658,
+					"y": 394.89007599651816,
+					"w": 428.2190785109997,
+					"h": 70.42301970906556
+				},
+				"type": "CREDIT",
+				"type_confidence": 99.0,
+				"type_coordinate": {
+					"x": 1069.2322939038277,
+					"y": 395.609354197979,
+					"w": 220.12418662011624,
+					"h": 70.23244775645435
+				},
+				"amount": 49500.0,
+				"amount_confidence": 99.82897186279297,
+				"amount_coordinate": {
+					"x": 1069.2322939038277,
+					"y": 395.609354197979,
+					"w": 220.12418662011624,
+					"h": 70.23244775645435
+				},
+				"ending_balance": 548000.0,
+				"ending_balance_confidence": 99.91172790527344,
+				"ending_balance_coordinate": {
+					"x": 1289.3337455391884,
+					"y": 395.8114714771509,
+					"w": 222.46660436689855,
+					"h": 70.23479603230953
+				}
+			},
+			{
+				"page_number": 2,
+				"date": "20-07-2023",
+				"date_confidence": 99.08369064331055,
+				"date_coordinate": {
+					"x": 115.55083096772433,
+					"y": 464.76298485696318,
+					"w": 170.33025947213174,
+					"h": 71.18794333934784
+				},
+				"description": "NBMB FELIX GABRIEL TO CHRISMORGAN SHINT ESB:NBMB:0001500F:560991330809",
+				"description_confidence": 97.04184286934989,
+				"description_coordinate": {
+					"x": 285.8470372259617,
+					"y": 464.9195133447647,
+					"w": 428.2241526246071,
+					"h": 71.4253588207066
+				},
+				"type": "CREDIT",
+				"type_confidence": 99.0,
+				"type_coordinate": {
+					"x": 1069.206775546074,
+					"y": 465.63952347636225,
+					"w": 220.12692072987557,
+					"h": 71.23461259901524
+				},
+				"amount": 150000.0,
+				"amount_confidence": 99.23564147949219,
+				"amount_coordinate": {
+					"x": 1069.206775546074,
+					"y": 465.63952347636225,
+					"w": 220.12692072987557,
+					"h": 71.23461259901524
+				},
+				"ending_balance": 698000.0,
+				"ending_balance_confidence": 99.91072845458985,
+				"ending_balance_coordinate": {
+					"x": 1289.3105918169022,
+					"y": 465.84181502461436,
+					"w": 222.46933847665788,
+					"h": 71.23696523159743
+				}
+			},
+			{
+				"page_number": 2,
+				"date": "20-07-2023",
+				"date_confidence": 98.19698715209961,
+				"date_coordinate": {
+					"x": 115.51541069895029,
+					"y": 535.7942602932453,
+					"w": 170.33161421120168,
+					"h": 70.18917238712311
+				},
+				"description": "NBMB CHRISMORGAN SH TO FELIX GABRIEL JON ESB:NBMB:0001500F:560995706045",
+				"description_confidence": 98.10691165924072,
+				"description_coordinate": {
+					"x": 285.8134396970272,
+					"y": 535.950928196311,
+					"w": 428.22833999991419,
+					"h": 70.42681441828609
+				},
+				"type": "DEBIT",
+				"type_confidence": 99.0,
+				"type_coordinate": {
+					"x": 823.0643324553967,
+					"y": 536.4452250152826,
+					"w": 246.14246772229672,
+					"h": 70.25961194932461
+				},
+				"amount": 199500.0,
+				"amount_confidence": 99.90437316894531,
+				"amount_coordinate": {
+					"x": 823.0643324553967,
+					"y": 536.4452250152826,
+					"w": 246.14246772229672,
+					"h": 70.25961194932461
+				},
+				"ending_balance": 498500.0,
+				"ending_balance_confidence": 99.87808227539063,
+				"ending_balance_coordinate": {
+					"x": 1289.2878322005273,
+					"y": 536.8741360753775,
+					"w": 222.4714321643114,
+					"h": 70.23822477646172
+				}
+			},
+			{
+				"page_number": 2,
+				"date": "20-07-2023",
+				"date_confidence": 98.37065887451172,
+				"date_coordinate": {
+					"x": 115.47948548197746,
+					"y": 605.8265905082226,
+					"w": 170.33395421504975,
+					"h": 71.19132851622999
+				},
+				"description": "NBMB CHRISMORGAN SH TO FELIX GABRIEL JON ESB:NBMB:0001500F:561002412169",
+				"description_confidence": 97.3940019607544,
+				"description_coordinate": {
+					"x": 285.7793741673231,
+					"y": 605.9834326803684,
+					"w": 428.2334633767605,
+					"h": 71.42920145392418
+				},
+				"type": "DEBIT",
+				"type_confidence": 99.0,
+				"type_coordinate": {
+					"x": 823.0361538827419,
+					"y": 606.4781477451325,
+					"w": 246.14552204310895,
+					"h": 71.26184214279056
+				},
+				"amount": 99500.0,
+				"amount_confidence": 99.89839935302735,
+				"amount_coordinate": {
+					"x": 823.0361538827419,
+					"y": 606.4781477451325,
+					"w": 246.14552204310895,
+					"h": 71.26184214279056
+				},
+				"ending_balance": 399000.0,
+				"ending_balance_confidence": 99.93148803710938,
+				"ending_balance_coordinate": {
+					"x": 1289.2647770047188,
+					"y": 606.9074770510197,
+					"w": 222.47416627407075,
+					"h": 71.24044189974666
+				}
+			},
+			{
+				"page_number": 2,
+				"date": "20-07-2023",
+				"date_confidence": 98.20383071899414,
+				"date_coordinate": {
+					"x": 115.44356026500464,
+					"y": 676.8609679341316,
+					"w": 170.33581390231849,
+					"h": 71.19303199648857
+				},
+				"description": "NBMB CHRISMORGAN SH TO FELIX GABRIEL JON ESB:NBMB:0001500F:561003149332",
+				"description_confidence": 96.39643383026123,
+				"description_coordinate": {
+					"x": 285.745308637619,
+					"y": 677.0179495215416,
+					"w": 428.23814338445666,
+					"h": 71.43113148398698
+				},
+				"type": "DEBIT",
+				"type_confidence": 99.0,
+				"type_coordinate": {
+					"x": 823.0079260468483,
+					"y": 677.5131525397301,
+					"w": 246.14820688962937,
+					"h": 71.2636153306812
+				},
+				"amount": 200000.0,
+				"amount_confidence": 99.27066040039063,
+				"amount_coordinate": {
+					"x": 823.0079260468483,
+					"y": 677.5131525397301,
+					"w": 246.14820688962937,
+					"h": 71.2636153306812
+				},
+				"ending_balance": 199000.0,
+				"ending_balance_confidence": 99.21556091308594,
+				"ending_balance_coordinate": {
+					"x": 1289.2416232824326,
+					"y": 677.9429000914097,
+					"w": 222.47660480439664,
+					"h": 71.24219330400229
+				}
+			},
+			{
+				"page_number": 2,
+				"date": "20-07-2023",
+				"date_confidence": 99.28017807006836,
+				"date_coordinate": {
+					"x": 115.4076350480318,
+					"y": 747.8968789279461,
+					"w": 170.33768590539695,
+					"h": 71.19473547674716
+				},
+				"description": "NBMB CHRISMORGAN SH TO FELIX GABRIEL JON ESB:NBMB:0001500F:561003846168",
+				"description_confidence": 97.50925922393799,
+				"description_coordinate": {
+					"x": 285.7112431079149,
+					"y": 748.0539999306202,
+					"w": 428.2428233921528,
+					"h": 71.43306587077677
+				},
+				"type": "DEBIT",
+				"type_confidence": 99.0,
+				"type_coordinate": {
+					"x": 822.9797474741936,
+					"y": 748.5496909022331,
+					"w": 246.1508917361498,
+					"h": 71.26538416184485
+				},
+				"amount": 100000.0,
+				"amount_confidence": 99.46992492675781,
+				"amount_coordinate": {
+					"x": 822.9797474741936,
+					"y": 748.5496909022331,
+					"w": 246.1508917361498,
+					"h": 71.26538416184485
+				},
+				"ending_balance": 99000.0,
+				"ending_balance_confidence": 99.683837890625,
+				"ending_balance_coordinate": {
+					"x": 1289.2185680866242,
+					"y": 748.9798566997051,
+					"w": 222.47901870310307,
+					"h": 71.24394035153091
+				}
+			},
+			{
+				"page_number": 2,
+				"date": "20-07-2023",
+				"date_confidence": 99.23165130615235,
+				"date_coordinate": {
+					"x": 115.37221477925778,
+					"y": 818.934323489666,
+					"w": 170.33904064446689,
+					"h": 70.19587738998234
+				},
+				"description": "NBMB FELIX GABRIEL TO CHRISMORGAN SHINT ESB:NBMB:0001500F:561004648463",
+				"description_confidence": 97.07776532854352,
+				"description_coordinate": {
+					"x": 285.6776702105999,
+					"y": 819.0916536152363,
+					"w": 428.24701076745989,
+					"h": 70.43442997708917
+				},
+				"type": "CREDIT",
+				"type_confidence": 99.0,
+				"type_coordinate": {
+					"x": 1069.0799719691277,
+					"y": 819.815079420805,
+					"w": 220.13854685425759,
+					"h": 70.24275577254594
+				},
+				"amount": 399500.0,
+				"amount_confidence": 99.89998626708985,
+				"amount_coordinate": {
+					"x": 1069.0799719691277,
+					"y": 819.815079420805,
+					"w": 220.13854685425759,
+					"h": 70.24275577254594
+				},
+				"ending_balance": 498500.0,
+				"ending_balance_confidence": 99.87468719482422,
+				"ending_balance_coordinate": {
+					"x": 1289.1957099437714,
+					"y": 820.018346875906,
+					"w": 222.48113702237607,
+					"h": 70.24511276185513
+				}
+			},
+			{
+				"page_number": 2,
+				"date": "20-07-2023",
+				"date_confidence": 99.31212615966797,
+				"date_coordinate": {
+					"x": 115.34950442612171,
+					"y": 888.972787976265,
+					"w": 170.32815346866847,
+					"h": 45.045995466411117
+				},
+				"description": "Admin Fee",
+				"description_confidence": 99.85989761352539,
+				"description_coordinate": {
+					"x": 285.6561421751976,
+					"y": 889.1301878094673,
+					"w": 428.23957201838496,
+					"h": 45.28463954478502
+				},
+				"type": "DEBIT",
+				"type_confidence": 99.0,
+				"type_coordinate": {
+					"x": 822.9341297149658,
+					"y": 889.6268546879292,
+					"w": 246.14584225416184,
+					"h": 45.116522163152698
+				},
+				"amount": 6000.0,
+				"amount_confidence": 99.8922348022461,
+				"amount_coordinate": {
+					"x": 822.9341297149658,
+					"y": 889.6268546879292,
+					"w": 246.14584225416184,
+					"h": 45.116522163152698
+				},
+				"ending_balance": 492500.0,
+				"ending_balance_confidence": 99.68658447265625,
+				"ending_balance_coordinate": {
+					"x": 1289.181128025055,
+					"y": 890.0578569769859,
+					"w": 222.4753485918045,
+					"h": 45.09489101357758
+				}
+			}
+		],
+		"TransactionSummary": []
+	}
 }
