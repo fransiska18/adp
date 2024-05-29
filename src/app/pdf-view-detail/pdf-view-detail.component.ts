@@ -33,7 +33,7 @@ export class PdfViewDetailComponent implements AfterViewInit, OnInit {
         type: 'text',
         filter:false,
         valuePrepareFunction: (cell, row) => {
-          if (row.date_confidence < 90){
+          if (row.date_confidence < 0.9){
             return `${cell} (WARNING!!!)`;
           }
           return cell;
@@ -44,7 +44,7 @@ export class PdfViewDetailComponent implements AfterViewInit, OnInit {
         type: 'text',
         filter:false,
         valuePrepareFunction: (cell, row) => {
-          if (row.description_confidence < 90){
+          if (row.description_confidence < 0.9){
             return `${cell} (WARNING!!!)`;
           }
           return cell;
@@ -55,7 +55,7 @@ export class PdfViewDetailComponent implements AfterViewInit, OnInit {
         type: 'text',
         filter:false,
         valuePrepareFunction: (cell, row) => {
-          if (row.amount_confidence < 90){
+          if (row.amount_confidence < 0.9){
             return `${cell} (WARNING!!!)`;
           }
           return cell;
@@ -66,7 +66,7 @@ export class PdfViewDetailComponent implements AfterViewInit, OnInit {
         type: 'text',
         filter:false,
         valuePrepareFunction: (cell, row) => {
-          if (row.ending_balance_confidence < 90){
+          if (row.ending_balance_confidence < 0.9){
             return `${cell} (WARNING!!!)`;
           }
           return cell;

@@ -5,8 +5,9 @@ const path = require('path');
 
 const app = express();
 const port = 3000;
+const cors = require('cors');
 
-app.use(bodyParser.json());
+app.use(bodyParser.json(),cors());
 
 // Endpoint to get the JSON file
 app.get('/get-json', (req, res) => {

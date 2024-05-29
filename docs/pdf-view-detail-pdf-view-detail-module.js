@@ -138,7 +138,7 @@ var PdfViewDetailComponent = /** @class */ (function () {
                     type: 'text',
                     filter: false,
                     valuePrepareFunction: function (cell, row) {
-                        if (row.date_confidence < 90) {
+                        if (row.date_confidence < 0.9) {
                             return cell + " (WARNING!!!)";
                         }
                         return cell;
@@ -149,7 +149,7 @@ var PdfViewDetailComponent = /** @class */ (function () {
                     type: 'text',
                     filter: false,
                     valuePrepareFunction: function (cell, row) {
-                        if (row.description_confidence < 90) {
+                        if (row.description_confidence < 0.9) {
                             return cell + " (WARNING!!!)";
                         }
                         return cell;
@@ -160,7 +160,7 @@ var PdfViewDetailComponent = /** @class */ (function () {
                     type: 'text',
                     filter: false,
                     valuePrepareFunction: function (cell, row) {
-                        if (row.amount_confidence < 90) {
+                        if (row.amount_confidence < 0.9) {
                             return cell + " (WARNING!!!)";
                         }
                         return cell;
@@ -171,7 +171,7 @@ var PdfViewDetailComponent = /** @class */ (function () {
                     type: 'text',
                     filter: false,
                     valuePrepareFunction: function (cell, row) {
-                        if (row.ending_balance_confidence < 90) {
+                        if (row.ending_balance_confidence < 0.9) {
                             return cell + " (WARNING!!!)";
                         }
                         return cell;
